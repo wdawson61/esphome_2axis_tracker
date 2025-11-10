@@ -1,0 +1,401 @@
+# Home Assistant Automations for Solar Tracker
+# Add these to your configuration.yaml or automations.yaml
+
+automation:
+  # ===== Basic Sun Tracking =====
+  
+  - id: solar_tracker_startup_homing
+    alias: "Solar Tracker: Startup Homing"
+    description: "Home the azimuth axis on Home Assistant startup"
+    trigger:
+      - platform: homeassistant
+        event: start
+      - platform: state
+        entity_id: binary_sensor.azimuth_home_switch
+        to: "on"
+        for:
+          seconds: 5
+    action:
+      - delay:
+          seconds: 30  # Wait for system to stabilize
+      - service: esphome.solar_tracker_home_azimuth
+      - wait_template: "{{ is_state('binary_sensor.azimuth_motor_active', 'off') }}"
+        timeout: "00:05:00"
+      - service: notify.mobile_app
+        data:
+          title: "Solar Tracker"
+          message: "Azimuth homing complete. System ready."
+  
+  - id: solar_tracker_follow_sun
+    alias: "Solar Tracker: Follow Sun"
+    description: "Update tracker position every 5 minutes to follow the sun"
+    trigger:
+      - platform: time_pattern
+        minutes: "/5"
+    condition:
+      - condition: sun
+        after: sunrise
+        before: sunset
+    action:
+      # Set azimuth (horizontal rotation)
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: "{{ state_attr('sun.sun', 'azimuth') | float }}"
+      # Set elevation (vertical tilt)
+      - delay:
+          seconds: 2
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: "{{ [0, state_attr('sun.sun', 'elevation') | float, 90] | sort | list | nth(1) }}"
+
+  # ===== Night Stow Position =====
+  
+  - id: solar_tracker_stow_night
+    alias: "Solar Tracker: Stow at Night"
+    description: "Move to safe horizontal position at sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "+00:15:00"  # 15 minutes after sunset
+    action:
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 0  # Horizontal
+      - delay:
+          seconds: 5
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: 180  # Face south (adjust for your location)
+
+  # ===== Morning Startup =====
+  
+  - id: solar_tracker_morning_startup
+    alias: "Solar Tracker: Morning Startup"
+    description: "Position tracker for sunrise"
+    trigger:
+      - platform: sun
+        event: sunrise
+        offset: "-00:30:00"  # 30 minutes before sunrise
+    action:
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: "{{ state_attr('sun.sun', 'azimuth') | float }}"
+      - delay:
+          seconds: 2
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 10  # Low angle for sunrise
+
+  # ===== Wind Protection =====
+  
+  - id: solar_tracker_wind_protection
+    alias: "Solar Tracker: Wind Protection"
+    description: "Stow tracker in high wind conditions"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.wind_speed  # Replace with your wind sensor
+        above: 40  # km/h or adjust for your units
+    action:
+      - service: notify.mobile_app  # Optional notification
+        data:
+          title: "Solar Tracker Alert"
+          message: "High wind detected. Stowing tracker to protect equipment."
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 0  # Flat position reduces wind load
+      - delay:
+          seconds: 3
+      - service: esphome.solar_tracker_stop_motors
+
+  # ===== Wind Recovery =====
+  
+  - id: solar_tracker_wind_recovery
+    alias: "Solar Tracker: Resume After Wind"
+    description: "Resume tracking when wind subsides"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.wind_speed
+        below: 30
+        for:
+          minutes: 10  # Wait 10 minutes of calm winds
+    condition:
+      - condition: sun
+        after: sunrise
+        before: sunset
+    action:
+      - service: notify.mobile_app
+        data:
+          title: "Solar Tracker"
+          message: "Wind has subsided. Resuming solar tracking."
+      - delay:
+          seconds: 2
+      # Resume tracking
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: "{{ state_attr('sun.sun', 'azimuth') | float }}"
+      - delay:
+          seconds: 5
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: "{{ state_attr('sun.sun', 'elevation') | float }}"
+
+  # ===== Snow/Ice Protection =====
+  
+  - id: solar_tracker_ice_protection
+    alias: "Solar Tracker: Ice Protection"
+    description: "Stow at steep angle during freezing rain"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.outdoor_temperature
+        below: 0
+    condition:
+      - condition: state
+        entity_id: weather.home  # Replace with your weather entity
+        state: "rainy"
+    action:
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 70  # Steep angle to shed ice/snow
+
+  # ===== Maintenance Mode =====
+  
+  - id: solar_tracker_maintenance_mode
+    alias: "Solar Tracker: Maintenance Mode"
+    description: "Stop tracking when maintenance switch is on"
+    trigger:
+      - platform: state
+        entity_id: input_boolean.solar_tracker_maintenance
+        to: "on"
+    action:
+      - service: esphome.solar_tracker_stop_motors
+      - service: notify.mobile_app
+        data:
+          title: "Solar Tracker"
+          message: "Maintenance mode activated. Tracking suspended."
+
+  # ===== Weekly Calibration =====
+  
+  - id: solar_tracker_weekly_calibration
+    alias: "Solar Tracker: Weekly Calibration"
+    description: "Perform sensor calibration weekly"
+    trigger:
+      - platform: time
+        at: "02:00:00"  # 2 AM
+    condition:
+      - condition: time
+        weekday:
+          - sun  # Every Sunday
+    action:
+      - service: esphome.solar_tracker_calibrate_sensor
+      - service: notify.mobile_app
+        data:
+          title: "Solar Tracker"
+          message: "Weekly sensor calibration completed."
+
+  # ===== Emergency Stop on Sensor Failure =====
+  
+  - id: solar_tracker_sensor_failure
+    alias: "Solar Tracker: Emergency Stop on Sensor Failure"
+    description: "Stop motors if sensor data becomes unavailable"
+    trigger:
+      - platform: state
+        entity_id: sensor.elevation_angle
+        to: "unavailable"
+        for:
+          minutes: 2
+      - platform: state
+        entity_id: sensor.heading_angle
+        to: "unavailable"
+        for:
+          minutes: 2
+    action:
+      - service: esphome.solar_tracker_emergency_stop
+      - service: persistent_notification.create
+        data:
+          title: "Solar Tracker ALERT"
+          message: "Sensor failure detected. Emergency stop activated."
+          notification_id: "solar_tracker_emergency"
+
+  # ===== Power Monitoring =====
+  
+  - id: solar_tracker_low_battery
+    alias: "Solar Tracker: Low Battery Protection"
+    description: "Stow tracker if battery is low"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.battery_voltage  # If you have battery backup
+        below: 11.5  # Volts
+    action:
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 0
+      - service: esphome.solar_tracker_stop_motors
+      - service: notify.mobile_app
+        data:
+          title: "Solar Tracker Alert"
+          message: "Low battery. Tracker stowed to conserve power."
+
+# ===== Input Helpers =====
+
+input_boolean:
+  solar_tracker_maintenance:
+    name: Solar Tracker Maintenance Mode
+    icon: mdi:tools
+
+  solar_tracker_auto_tracking:
+    name: Solar Tracker Auto Tracking
+    icon: mdi:solar-power
+    initial: on
+
+input_number:
+  solar_tracker_max_wind_speed:
+    name: Maximum Wind Speed for Tracking
+    min: 0
+    max: 100
+    step: 5
+    unit_of_measurement: "km/h"
+    icon: mdi:weather-windy
+
+  solar_tracker_update_interval:
+    name: Tracking Update Interval
+    min: 1
+    max: 30
+    step: 1
+    unit_of_measurement: "minutes"
+    icon: mdi:clock-outline
+    initial: 5
+
+# ===== Scripts =====
+
+script:
+  solar_tracker_manual_position:
+    alias: "Solar Tracker: Set Manual Position"
+    description: "Manually set tracker to specific angles"
+    fields:
+      elevation:
+        description: "Target elevation angle (0-90)"
+        example: 45
+      azimuth:
+        description: "Target azimuth angle (0-360)"
+        example: 180
+    sequence:
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: "{{ azimuth }}"
+      - delay:
+          seconds: 3
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: "{{ elevation }}"
+
+  solar_tracker_test_routine:
+    alias: "Solar Tracker: Test Routine"
+    description: "Run through test positions to verify operation"
+    sequence:
+      # Home the azimuth first
+      - service: notify.mobile_app
+        data:
+          message: "Homing azimuth axis..."
+      - service: esphome.solar_tracker_home_azimuth
+      - wait_template: "{{ is_state('binary_sensor.azimuth_motor_active', 'off') }}"
+        timeout: "00:05:00"
+      - delay:
+          seconds: 2
+      
+      # Test elevation
+      - service: notify.mobile_app
+        data:
+          message: "Testing elevation movement..."
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 0
+      - delay:
+          seconds: 10
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 45
+      - delay:
+          seconds: 10
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: 90
+      - delay:
+          seconds: 10
+      
+      # Test azimuth
+      - service: notify.mobile_app
+        data:
+          message: "Testing azimuth movement..."
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: 0
+      - delay:
+          seconds: 15
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: 90
+      - delay:
+          seconds: 15
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: 180
+      - delay:
+          seconds: 15
+      
+      # Return to tracking position
+      - service: notify.mobile_app
+        data:
+          message: "Test complete. Returning to sun tracking position."
+      - service: esphome.solar_tracker_set_azimuth
+        data:
+          angle: "{{ state_attr('sun.sun', 'azimuth') | float }}"
+      - delay:
+          seconds: 5
+      - service: esphome.solar_tracker_set_elevation
+        data:
+          angle: "{{ state_attr('sun.sun', 'elevation') | float }}"
+
+# ===== Sensors =====
+
+sensor:
+  - platform: template
+    sensors:
+      solar_tracker_tracking_error_azimuth:
+        friendly_name: "Solar Tracker Azimuth Error"
+        unit_of_measurement: "°"
+        value_template: >
+          {% set current = states('sensor.heading_angle') | float %}
+          {% set target = state_attr('sun.sun', 'azimuth') | float %}
+          {% set error = target - current %}
+          {% if error > 180 %}
+            {{ error - 360 }}
+          {% elif error < -180 %}
+            {{ error + 360 }}
+          {% else %}
+            {{ error }}
+          {% endif %}
+      
+      solar_tracker_tracking_error_elevation:
+        friendly_name: "Solar Tracker Elevation Error"
+        unit_of_measurement: "°"
+        value_template: >
+          {% set current = states('sensor.elevation_angle') | float %}
+          {% set target = state_attr('sun.sun', 'elevation') | float %}
+          {{ target - current }}
+      
+      solar_tracker_status:
+        friendly_name: "Solar Tracker Status"
+        value_template: >
+          {% if is_state('input_boolean.solar_tracker_maintenance', 'on') %}
+            Maintenance
+          {% elif is_state('sun.sun', 'below_horizon') %}
+            Stowed (Night)
+          {% elif states('sensor.wind_speed') | float(0) > states('input_number.solar_tracker_max_wind_speed') | float %}
+            Stowed (Wind)
+          {% elif is_state('binary_sensor.elevation_motor_active', 'on') or is_state('binary_sensor.azimuth_motor_active', 'on') %}
+            Moving
+          {% elif is_state('input_boolean.solar_tracker_auto_tracking', 'on') %}
+            Tracking
+          {% else %}
+            Idle
+          {% endif %}

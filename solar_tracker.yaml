@@ -1,0 +1,197 @@
+esphome:
+  name: solar-tracker
+  friendly_name: Solar Tracker
+  platform: ESP32
+  board: esp32-c6-devkitc-1
+  platformio_options:
+    board_build.mcu: esp32c6
+    board_build.variant: esp32c6
+  includes:
+    - solar_tracker.h
+  libraries:
+    - Wire
+
+# Enable logging
+logger:
+  level: DEBUG
+  baud_rate: 115200
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret api_encryption_key
+
+ota:
+  password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  
+  # Enable fallback hotspot
+  ap:
+    ssid: "Solar-Tracker Fallback"
+    password: !secret ap_password
+
+captive_portal:
+
+# UART for HWT905 RS485 communication
+uart:
+  id: hwt905_uart
+  tx_pin: GPIO4
+  rx_pin: GPIO5
+  baud_rate: 115200
+  data_bits: 8
+  stop_bits: 1
+  parity: NONE
+
+# Custom component for HWT905 sensor
+sensor:
+  - platform: custom
+    lambda: |-
+      auto hwt905 = new HWT905Sensor(id(hwt905_uart));
+      App.register_component(hwt905);
+      return {hwt905->elevation_sensor, hwt905->heading_sensor, 
+              hwt905->accel_x_sensor, hwt905->accel_y_sensor, hwt905->accel_z_sensor};
+    sensors:
+      - name: "Elevation Angle"
+        unit_of_measurement: "°"
+        accuracy_decimals: 2
+        icon: "mdi:angle-acute"
+        id: elevation_angle
+      - name: "Heading Angle"
+        unit_of_measurement: "°"
+        accuracy_decimals: 2
+        icon: "mdi:compass"
+        id: heading_angle
+      - name: "Acceleration X"
+        unit_of_measurement: "m/s²"
+        accuracy_decimals: 3
+        icon: "mdi:axis-x-arrow"
+      - name: "Acceleration Y"
+        unit_of_measurement: "m/s²"
+        accuracy_decimals: 3
+        icon: "mdi:axis-y-arrow"
+      - name: "Acceleration Z"
+        unit_of_measurement: "m/s²"
+        accuracy_decimals: 3
+        icon: "mdi:axis-z-arrow"
+
+# Binary sensor for motor status
+binary_sensor:
+  - platform: template
+    name: "Elevation Motor Active"
+    id: elevation_motor_active
+    icon: "mdi:rotate-3d-variant"
+  - platform: template
+    name: "Azimuth Motor Active"
+    id: azimuth_motor_active
+    icon: "mdi:rotate-orbit"
+  
+  # Homing limit switch
+  - platform: gpio
+    pin:
+      number: GPIO10
+      mode:
+        input: true
+        pullup: true
+      inverted: true  # Active LOW (switch closes to ground)
+    name: "Azimuth Home Switch"
+    id: azimuth_home_switch
+    icon: "mdi:home-circle"
+    filters:
+      - delayed_on: 50ms  # Debounce
+
+# Text sensor for status
+text_sensor:
+  - platform: template
+    name: "Tracker Status"
+    id: tracker_status
+    icon: "mdi:information-outline"
+
+# Number inputs for target angles
+number:
+  - platform: template
+    name: "Target Elevation"
+    id: target_elevation
+    min_value: 0
+    max_value: 90
+    step: 0.5
+    mode: slider
+    optimistic: true
+    unit_of_measurement: "°"
+    icon: "mdi:angle-acute"
+  - platform: template
+    name: "Target Azimuth"
+    id: target_azimuth
+    min_value: 0
+    max_value: 360
+    step: 1
+    mode: slider
+    optimistic: true
+    unit_of_measurement: "°"
+    icon: "mdi:compass"
+
+# Custom component for motor control
+custom_component:
+  - lambda: |-
+      auto motor_controller = new SolarTrackerMotorController(
+        GPIO6,  // Elevation forward pin
+        GPIO7,  // Elevation backward pin
+        GPIO8,  // Azimuth CW pin
+        GPIO9,  // Azimuth CCW pin
+        GPIO10  // Azimuth home switch pin
+      );
+      App.register_component(motor_controller);
+      return {motor_controller};
+    components:
+      - id: motor_controller
+
+# Services exposed to Home Assistant
+api:
+  services:
+    - service: set_elevation
+      variables:
+        angle: float
+      then:
+        - lambda: |-
+            auto controller = (SolarTrackerMotorController*)id(motor_controller);
+            controller->set_elevation(angle);
+    
+    - service: set_azimuth
+      variables:
+        angle: float
+      then:
+        - lambda: |-
+            auto controller = (SolarTrackerMotorController*)id(motor_controller);
+            controller->set_azimuth(angle);
+    
+    - service: home_azimuth
+      then:
+        - lambda: |-
+            auto controller = (SolarTrackerMotorController*)id(motor_controller);
+            controller->home_azimuth();
+    
+    - service: calibrate_sensor
+      then:
+        - lambda: |-
+            auto hwt905 = App.get_component_by_name<HWT905Sensor*>("hwt905_sensor");
+            if (hwt905) {
+              hwt905->calibrate();
+            }
+    
+    - service: stop_motors
+      then:
+        - lambda: |-
+            auto controller = (SolarTrackerMotorController*)id(motor_controller);
+            controller->stop_all_motors();
+    
+    - service: emergency_stop
+      then:
+        - lambda: |-
+            auto controller = (SolarTrackerMotorController*)id(motor_controller);
+            controller->emergency_stop();
+
+# Status LED
+status_led:
+  pin: GPIO2
