@@ -93,7 +93,7 @@ automation:
     description: "Stow tracker in high wind conditions"
     trigger:
       - platform: numeric_state
-        entity_id: sensor.wind_speed  # Replace with your wind sensor
+        entity_id: sensor.gw2000b_wind_gust  # Replace with your wind sensor
         above: 40  # km/h or adjust for your units
     action:
       - service: notify.mobile_app  # Optional notification
