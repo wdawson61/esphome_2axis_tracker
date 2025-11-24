@@ -1,0 +1,71 @@
+name: Solar Tracker Controller
+version: "1.0.0"
+slug: solar_tracker
+description: Advanced solar tracker control with sun position tracking, sensor fusion, and PID control
+url: "https://github.com/yourusername/solar-tracker-addon"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+startup: application
+boot: auto
+hassio_api: true
+hassio_role: default
+homeassistant_api: true
+host_network: false
+map:
+  - share:rw
+options:
+  esp32_ip: "192.168.1.100"
+  esp32_port: 80
+  mqtt_broker: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_password: ""
+  latitude: 40.7128
+  longitude: -74.0060
+  timezone: "America/New_York"
+  update_interval: 1.0
+  pid_kp: 1.0
+  pid_ki: 0.1
+  pid_kd: 0.05
+  max_wind_speed: 50
+  stow_position_azimuth: 0
+  stow_position_elevation: 0
+  tracking_mode: "auto"
+  ha_wind_speed_entity: ""
+  ha_wind_gust_entity: ""
+  ha_wind_direction_entity: ""
+  ha_temperature_entity: ""
+  ha_humidity_entity: ""
+  use_wind_gust_for_stow: false
+schema:
+  esp32_ip: str
+  esp32_port: port
+  mqtt_broker: str
+  mqtt_port: port
+  mqtt_user: str?
+  mqtt_password: password?
+  latitude: float
+  longitude: float
+  timezone: str
+  update_interval: float(0.1,10)?
+  pid_kp: float(0,10)?
+  pid_ki: float(0,10)?
+  pid_kd: float(0,10)?
+  max_wind_speed: int(0,200)?
+  stow_position_azimuth: float(-180,360)?
+  stow_position_elevation: float(-90,90)?
+  tracking_mode: list(manual|auto|stow|calibrate)?
+  ha_wind_speed_entity: str?
+  ha_wind_gust_entity: str?
+  ha_wind_direction_entity: str?
+  ha_temperature_entity: str?
+  ha_humidity_entity: str?
+  use_wind_gust_for_stow: bool?
+ports:
+  8099/tcp: 8099
+webui: "http://[HOST]:[PORT:8099]"

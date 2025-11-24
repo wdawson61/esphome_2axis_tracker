@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Tracker Control</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .status-auto { background: #10b981; color: white; }
+        .status-manual { background: #3b82f6; color: white; }
+        .status-stow { background: #f59e0b; color: white; }
+        .status-calibrate { background: #8b5cf6; color: white; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        
+        .position-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .position-item {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .position-item label {
+            display: block;
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .position-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .position-unit {
+            font-size: 18px;
+            color: #9ca3af;
+        }
+        
+        .control-group {
+            margin-bottom: 20px;
+        }
+        
+        .control-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4b5563;
+            font-weight: 500;
+        }
+        
+        .mode-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .btn-auto { background: #10b981; color: white; }
+        .btn-manual { background: #3b82f6; color: white; }
+        .btn-stow { background: #f59e0b; color: white; }
+        .btn-calibrate { background: #8b5cf6; color: white; }
+        .btn-danger { background: #ef4444; color: white; }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        input[type="number"], input[type="range"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        input[type="range"] {
+            padding: 0;
+        }
+        
+        .slider-value {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1f2937;
+            margin-top: 5px;
+        }
+        
+        .compass {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            position: relative;
+            background: radial-gradient(circle, #f3f4f6 0%, #e5e7eb 100%);
+            border-radius: 50%;
+            border: 3px solid #d1d5db;
+        }
+        
+        .compass-needle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 80px;
+            background: linear-gradient(to bottom, #ef4444 0%, #dc2626 50%, #6b7280 50%, #4b5563 100%);
+            transform-origin: bottom center;
+            transform: translate(-50%, -100%);
+            border-radius: 2px;
+            transition: transform 0.5s ease;
+        }
+        
+        .compass-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            background: #1f2937;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid white;
+        }
+        
+        .compass-label {
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4b5563;
+        }
+        
+        .compass-label.n { top: 5px; left: 50%; transform: translateX(-50%); }
+        .compass-label.e { right: 5px; top: 50%; transform: translateY(-50%); }
+        .compass-label.s { bottom: 5px; left: 50%; transform: translateX(-50%); }
+        .compass-label.w { left: 5px; top: 50%; transform: translateY(-50%); }
+        
+        .error-display {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .info-item {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        
+        .info-item strong {
+            color: #6b7280;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .info-item span {
+            color: #1f2937;
+            font-weight: 600;
+        }
+        
+        .moving-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 1s infinite;
+        }
+        
+        .moving-indicator.active {
+            background: #10b981;
+        }
+        
+        .moving-indicator.inactive {
+            background: #9ca3af;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .last-update {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                ☀️ Solar Tracker Control
+            </h1>
+            <span id="modeBadge" class="status-badge status-auto">AUTO</span>
+        </div>
+        
+        <div class="error-display" id="errorDisplay"></div>
+        
+        <div class="grid">
+            <!-- Current Position Card -->
+            <div class="card">
+                <h2>📍 Current Position</h2>
+                <div class="position-display">
+                    <div class="position-item">
+                        <label>Azimuth</label>
+                        <div>
+                            <span class="position-value" id="currentAzimuth">0</span>
+                            <span class="position-unit">°</span>
+                        </div>
+                    </div>
+                    <div class="position-item">
+                        <label>Elevation</label>
+                        <div>
+                            <span class="position-value" id="currentElevation">0</span>
+                            <span class="position-unit">°</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="compass">
+                    <div class="compass-label n">N</div>
+                    <div class="compass-label e">E</div>
+                    <div class="compass-label s">S</div>
+                    <div class="compass-label w">W</div>
+                    <div class="compass-needle" id="compassNeedle"></div>
+                    <div class="compass-center"></div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 10px;">
+                    <span class="moving-indicator inactive" id="movingIndicator"></span>
+                    <span id="movingText">Stationary</span>
+                </div>
+            </div>
+            
+            <!-- Sun Position Card -->
+            <div class="card">
+                <h2>☀️ Sun Position</h2>
+                <div class="position-display">
+                    <div class="position-item">
+                        <label>Sun Azimuth</label>
+                        <div>
+                            <span class="position-value" id="sunAzimuth">0</span>
+                            <span class="position-unit">°</span>
+                        </div>
+                    </div>
+                    <div class="position-item">
+                        <label>Sun Elevation</label>
+                        <div>
+                            <span class="position-value" id="sunElevation">0</span>
+                            <span class="position-unit">°</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Error Az</strong>
+                        <span id="errorAzimuth">0°</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Error El</strong>
+                        <span id="errorElevation">0°</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Wind Speed</strong>
+                        <span id="windSpeed">0 mph</span>
+                    </div>
+                    <div class="info-item" id="windGustItem" style="display: none;">
+                        <strong>Wind Gust</strong>
+                        <span id="windGust">0 mph</span>
+                    </div>
+                    <div class="info-item" id="windDirItem" style="display: none;">
+                        <strong>Wind Dir</strong>
+                        <span id="windDirection">0°</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Stowed</strong>
+                        <span id="stowedStatus">No</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mode Control Card -->
+            <div class="card">
+                <h2>🎮 Tracking Mode</h2>
+                <div class="mode-buttons">
+                    <button class="btn btn-auto" onclick="setMode('auto')">
+                        Auto Track
+                    </button>
+                    <button class="btn btn-manual" onclick="setMode('manual')">
+                        Manual
+                    </button>
+                    <button class="btn btn-stow" onclick="setMode('stow')">
+                        Stow
+                    </button>
+                    <button class="btn btn-calibrate" onclick="setMode('calibrate')">
+                        Calibrate
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Manual Control Card -->
+            <div class="card">
+                <h2>🕹️ Manual Control</h2>
+                
+                <div class="control-group">
+                    <label>Target Azimuth: <span id="manualAzValue">0</span>°</label>
+                    <input type="range" id="manualAzimuth" min="0" max="360" value="0" step="1" 
+                           oninput="updateSliderValue('manualAzValue', this.value)">
+                </div>
+                
+                <div class="control-group">
+                    <label>Target Elevation: <span id="manualElValue">0</span>°</label>
+                    <input type="range" id="manualElevation" min="-10" max="90" value="0" step="1"
+                           oninput="updateSliderValue('manualElValue', this.value)">
+                </div>
+                
+                <button class="btn btn-manual" style="width: 100%;" onclick="setManualTarget()">
+                    Move to Target
+                </button>
+                
+                <button class="btn btn-danger" style="width: 100%; margin-top: 10px;" onclick="emergencyStop()">
+                    🛑 Emergency Stop
+                </button>
+            </div>
+        </div>
+        
+        <div class="last-update">
+            Last update: <span id="lastUpdate">--</span>
+        </div>
+    </div>
+    
+    <script>
+        let updateInterval;
+        
+        // Start auto-update
+        updateStatus();
+        updateInterval = setInterval(updateStatus, 1000);
+        
+        async function updateStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                
+                // Update position displays
+                document.getElementById('currentAzimuth').textContent = data.current_azimuth.toFixed(1);
+                document.getElementById('currentElevation').textContent = data.current_elevation.toFixed(1);
+                document.getElementById('sunAzimuth').textContent = data.sun_azimuth.toFixed(1);
+                document.getElementById('sunElevation').textContent = data.sun_elevation.toFixed(1);
+                
+                // Update compass needle
+                document.getElementById('compassNeedle').style.transform = 
+                    `translate(-50%, -100%) rotate(${data.current_azimuth}deg)`;
+                
+                // Update errors
+                document.getElementById('errorAzimuth').textContent = data.error_azimuth.toFixed(2) + '°';
+                document.getElementById('errorElevation').textContent = data.error_elevation.toFixed(2) + '°';
+                
+                // Update wind speed
+                document.getElementById('windSpeed').textContent = data.wind_speed.toFixed(1) + ' mph';
+                
+                // Show wind gust if available
+                if (data.wind_data && data.wind_data.wind_gust_available) {
+                    document.getElementById('windGustItem').style.display = 'block';
+                    document.getElementById('windGust').textContent = data.wind_data.wind_gust.toFixed(1) + ' mph';
+                }
+                
+                // Show wind direction if available
+                if (data.wind_data && data.wind_data.wind_direction !== undefined) {
+                    document.getElementById('windDirItem').style.display = 'block';
+                    document.getElementById('windDirection').textContent = data.wind_data.wind_direction.toFixed(0) + '°';
+                }
+                
+                // Update stowed status
+                document.getElementById('stowedStatus').textContent = data.is_stowed ? 'Yes' : 'No';
+                
+                // Update moving indicator
+                const indicator = document.getElementById('movingIndicator');
+                const movingText = document.getElementById('movingText');
+                if (data.is_moving) {
+                    indicator.className = 'moving-indicator active';
+                    movingText.textContent = 'Moving';
+                } else {
+                    indicator.className = 'moving-indicator inactive';
+                    movingText.textContent = 'Stationary';
+                }
+                
+                // Update mode badge
+                const modeBadge = document.getElementById('modeBadge');
+                modeBadge.textContent = data.mode.toUpperCase();
+                modeBadge.className = `status-badge status-${data.mode}`;
+                
+                // Update timestamp
+                if (data.last_update) {
+                    const date = new Date(data.last_update);
+                    document.getElementById('lastUpdate').textContent = date.toLocaleTimeString();
+                }
+                
+                hideError();
+                
+            } catch (error) {
+                showError('Failed to update status: ' + error.message);
+            }
+        }
+        
+        async function setMode(mode) {
+            try {
+                const response = await fetch('/api/mode', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ mode: mode })
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    updateStatus();
+                } else {
+                    showError('Failed to set mode: ' + data.error);
+                }
+            } catch (error) {
+                showError('Error setting mode: ' + error.message);
+            }
+        }
+        
+        async function setManualTarget() {
+            try {
+                const azimuth = parseFloat(document.getElementById('manualAzimuth').value);
+                const elevation = parseFloat(document.getElementById('manualElevation').value);
+                
+                const response = await fetch('/api/target', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ azimuth, elevation })
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    updateStatus();
+                } else {
+                    showError('Failed to set target: ' + data.error);
+                }
+            } catch (error) {
+                showError('Error setting target: ' + error.message);
+            }
+        }
+        
+        async function emergencyStop() {
+            if (confirm('Emergency stop - are you sure?')) {
+                try {
+                    const response = await fetch('/api/stow', {
+                        method: 'POST'
+                    });
+                    
+                    const data = await response.json();
+                    if (data.success) {
+                        updateStatus();
+                    }
+                } catch (error) {
+                    showError('Error during emergency stop: ' + error.message);
+                }
+            }
+        }
+        
+        function updateSliderValue(elementId, value) {
+            document.getElementById(elementId).textContent = value;
+        }
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('errorDisplay');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+        
+        function hideError() {
+            document.getElementById('errorDisplay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
