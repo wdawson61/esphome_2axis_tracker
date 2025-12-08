@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54302DDCR
+D Conv DC-DC 4.5V to 28V Synchronous Step Down Single-Out 0.6V to 26V 3A 6-Pin TSOT-23 T/R
+K
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps54302
+$ENDCMP
+#
+#End Doc Library
