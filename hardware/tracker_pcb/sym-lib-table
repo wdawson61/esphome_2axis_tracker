@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TPS54302DDCR")(type "KiCad")(uri "/Users/wdawson/dev/esphome_2axis_tracker/hardware/tracker_pcb/libs/TPS54302DDCR/TPS54302DDCR.kicad_sym")(options "")(descr ""))
+  (lib (name "DRV8243HQRXYRQ1")(type "KiCad")(uri "/Users/wdawson/dev/esphome_2axis_tracker/hardware/tracker_pcb/libs/DRV8243HQRXYRQ1/DRV8243HQRXYRQ1.kicad_sym")(options "")(descr ""))
+  (lib (name "THVD1426DRLR")(type "KiCad")(uri "/Users/wdawson/dev/esphome_2axis_tracker/hardware/tracker_pcb/libs/THVD1426DRLR/THVD1426DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32C6")(type "KiCad")(uri "/Users/wdawson/dev/esphome_2axis_tracker/hardware/tracker_pcb/libs/ESP32C6/113991054.kicad_sym")(options "")(descr ""))
+  (lib (name "2601-1102")(type "KiCad")(uri "/Users/wdawson/dev/esphome_2axis_tracker/hardware/tracker_pcb/libs/2601_1102/2025-12-08_04-40-32.kicad_sym")(options "")(descr ""))
+)
