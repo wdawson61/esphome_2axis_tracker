@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP THVD1426DRLR
-D RS-422/RS-485 Interface IC 3.3-V to 5-V 12-Mbps half-duplex RS-485 transceiver auto-direction control &plusmn;12-kV IEC ESD
-K
-F https://www.ti.com/lit/ds/symlink/thvd1426.pdf?ts=1651644969093&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTHVD1426
-$ENDCMP
-#
-#End Doc Library

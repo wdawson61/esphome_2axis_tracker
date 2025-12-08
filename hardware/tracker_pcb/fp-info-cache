@@ -1,4 +1,4 @@
-25620025251466197
+25621790494084694
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102661,6 +102661,13 @@ MODULE_113991054
 0
 14
 14
+footprint
+RJ45-TH_R-RJ45R08P-B000
+
+
+0
+10
+10
 footprint
 SOT95P280X110-6N
 DDC
