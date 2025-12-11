@@ -1898,7 +1898,7 @@
 		(symbol "DRV8244HQRYJRQ1_1_1"
 			(rectangle
 				(start 5.08 2.54)
-				(end 27.94 -20.32)
+				(end 27.94 -19.05)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -2016,7 +2016,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -17.78 0)
+				(at 0 -16.51 0)
 				(length 5.08)
 				(name "NFAULT"
 					(effects
@@ -2052,7 +2052,7 @@
 				)
 			)
 			(pin passive line
-				(at 16.51 -25.4 90)
+				(at 16.51 -24.13 90)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -2142,7 +2142,7 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -12.7 180)
+				(at 33.02 -11.43 180)
 				(length 5.08)
 				(name "NSLEEP"
 					(effects
@@ -2160,7 +2160,7 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -15.24 180)
+				(at 33.02 -13.97 180)
 				(length 5.08)
 				(name "MODE"
 					(effects
@@ -2178,7 +2178,7 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -17.78 180)
+				(at 33.02 -16.51 180)
 				(length 5.08)
 				(name "IPROPI"
 					(effects

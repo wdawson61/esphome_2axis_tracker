@@ -2646,7 +2646,7 @@
 			(symbol "DRV8244HQRYJRQ1_1_1"
 				(rectangle
 					(start 5.08 2.54)
-					(end 27.94 -20.32)
+					(end 27.94 -19.05)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2764,7 +2764,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -17.78 0)
+					(at 0 -16.51 0)
 					(length 5.08)
 					(name "NFAULT"
 						(effects
@@ -2800,7 +2800,7 @@
 					)
 				)
 				(pin passive line
-					(at 16.51 -25.4 90)
+					(at 16.51 -24.13 90)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -2890,7 +2890,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -12.7 180)
+					(at 33.02 -11.43 180)
 					(length 5.08)
 					(name "NSLEEP"
 						(effects
@@ -2908,7 +2908,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -15.24 180)
+					(at 33.02 -13.97 180)
 					(length 5.08)
 					(name "MODE"
 						(effects
@@ -2926,7 +2926,7 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -17.78 180)
+					(at 33.02 -16.51 180)
 					(length 5.08)
 					(name "IPROPI"
 						(effects
@@ -4327,7 +4327,7 @@
 	)
 	(text "Solder jumper\nfor half bridge ode"
 		(exclude_from_sim no)
-		(at 62.992 93.98 0)
+		(at 79.502 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4340,6 +4340,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04133c29-8d59-415b-843c-6967cb307137")
+	)
+	(junction
+		(at 45.72 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d12a5b5-f21b-40b6-a6ef-351f6186da95")
 	)
 	(junction
 		(at 21.59 26.67)
@@ -4378,6 +4384,12 @@
 		(uuid "3c2950b4-5bb6-4dd4-98c6-6f170844451e")
 	)
 	(junction
+		(at 62.23 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d4d3a11-e837-4e86-af00-7b3a2824bc17")
+	)
+	(junction
 		(at 118.11 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4388,6 +4400,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56beb8ea-2c44-4659-a4dc-d8d2e4b38050")
+	)
+	(junction
+		(at 45.72 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cd476f6-7435-4a5e-90d0-65b895d068ee")
 	)
 	(junction
 		(at 77.47 127)
@@ -4402,6 +4420,12 @@
 		(uuid "5da2ed0f-1236-4b52-96ef-725e527ccdf7")
 	)
 	(junction
+		(at 62.23 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ecdd03b-b20d-4130-9969-90ed23e5e153")
+	)
+	(junction
 		(at 63.5 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4414,18 +4438,6 @@
 		(uuid "6856db5b-dbb0-4555-a4c5-18bd3415c99d")
 	)
 	(junction
-		(at 76.2 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6abf72a6-5138-4c85-b371-b69347540595")
-	)
-	(junction
-		(at 62.23 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "732941e0-5ff8-495d-9921-783190ecf277")
-	)
-	(junction
 		(at 21.59 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4436,6 +4448,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f61907c-fc35-4b92-996e-da1e11510403")
+	)
+	(junction
+		(at 76.2 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80d7c2b1-345b-440e-96d7-fcc4a28167e5")
 	)
 	(junction
 		(at 26.67 72.39)
@@ -4486,6 +4504,12 @@
 		(uuid "94b7a211-6509-4d27-8d87-5ca5bb114265")
 	)
 	(junction
+		(at 62.23 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cce458c-7586-4e24-b946-112727a9e249")
+	)
+	(junction
 		(at 46.99 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4522,28 +4546,22 @@
 		(uuid "aa6252ac-1891-406d-a7be-e0adb9087de2")
 	)
 	(junction
+		(at 68.58 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba8ec1a4-0ccc-44f7-ab65-e58b87aa06ee")
+	)
+	(junction
 		(at 26.67 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd129cfd-a48f-485b-8492-108e4586bb96")
 	)
 	(junction
-		(at 45.72 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfe8d77a-9b95-4895-8a69-94ce15c5538d")
-	)
-	(junction
 		(at 118.11 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca1a0dbd-45a9-4036-b526-5f00fd19c6b9")
-	)
-	(junction
-		(at 68.58 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb85c4aa-1cfe-4923-87e5-5e161d65cbac")
 	)
 	(junction
 		(at 36.83 193.04)
@@ -4576,12 +4594,6 @@
 		(uuid "de5ffe31-28ae-478c-997d-7339b9a75106")
 	)
 	(junction
-		(at 45.72 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e87961ca-8fc6-4ebe-a4f7-b869caa04737")
-	)
-	(junction
 		(at 49.53 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4608,6 +4620,16 @@
 			(type default)
 		)
 		(uuid "00458064-12bc-4c99-9d8a-6ad031af171b")
+	)
+	(wire
+		(pts
+			(xy 45.72 100.33) (xy 45.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0115cc43-9a9b-4b0d-953f-52e7769367df")
 	)
 	(wire
 		(pts
@@ -4638,6 +4660,16 @@
 			(type default)
 		)
 		(uuid "04190df6-ee17-466c-992a-fe0f912bffb6")
+	)
+	(wire
+		(pts
+			(xy 62.23 87.63) (xy 68.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0550bfee-c893-4cf2-bd74-cc9d4b3eefc9")
 	)
 	(wire
 		(pts
@@ -4678,6 +4710,16 @@
 			(type default)
 		)
 		(uuid "0b4282cd-9a7f-4bdd-a31e-20df9903768d")
+	)
+	(wire
+		(pts
+			(xy 68.58 104.14) (xy 68.58 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba4284f-dcac-4b83-ac58-6656c875a5b4")
 	)
 	(wire
 		(pts
@@ -4881,16 +4923,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 81.28) (xy 68.58 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31007e73-2e08-4de9-a82a-70db658a0fb7")
-	)
-	(wire
-		(pts
 			(xy 135.89 22.86) (xy 140.97 22.86)
 		)
 		(stroke
@@ -4941,16 +4973,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 76.2) (xy 62.23 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f22a7e5-ac53-4f4d-8323-b21ea984290b")
-	)
-	(wire
-		(pts
 			(xy 76.2 78.74) (xy 76.2 76.2)
 		)
 		(stroke
@@ -4961,16 +4983,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 102.87) (xy 45.72 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40c65ccb-73b0-4612-ac0a-b728bec0bc54")
-	)
-	(wire
-		(pts
 			(xy 72.39 33.02) (xy 72.39 41.91)
 		)
 		(stroke
@@ -4978,6 +4990,16 @@
 			(type default)
 		)
 		(uuid "42703aa4-b8df-4933-bc56-1e5aa62b5224")
+	)
+	(wire
+		(pts
+			(xy 62.23 90.17) (xy 64.77 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4897854a-b780-4ff7-9713-f25ab55264e9")
 	)
 	(wire
 		(pts
@@ -5071,23 +5093,23 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 102.87) (xy 68.58 102.87)
+			(xy 64.77 90.17) (xy 64.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b2755c-3bfc-4490-9c94-2232763d9e3a")
+	)
+	(wire
+		(pts
+			(xy 62.23 105.41) (xy 68.58 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6ed86bcb-ac6e-450d-b2fe-95501b54d6a3")
-	)
-	(wire
-		(pts
-			(xy 62.23 88.9) (xy 62.23 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "725f6c1e-f7d1-4f1a-bee2-ec752b2deae4")
 	)
 	(wire
 		(pts
@@ -5121,7 +5143,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 102.87) (xy 76.2 86.36)
+			(xy 76.2 105.41) (xy 76.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5141,17 +5163,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 102.87) (xy 68.58 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d5244ab-a71f-4510-94cf-92f3119121f3")
-	)
-	(wire
-		(pts
-			(xy 45.72 102.87) (xy 62.23 102.87)
+			(xy 45.72 105.41) (xy 62.23 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5171,6 +5183,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 105.41) (xy 45.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878d6b48-0966-4f8c-a231-5f639be78913")
+	)
+	(wire
+		(pts
 			(xy 82.55 124.46) (xy 85.09 124.46)
 		)
 		(stroke
@@ -5181,7 +5203,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 102.87) (xy 76.2 102.87)
+			(xy 68.58 105.41) (xy 76.2 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5271,6 +5293,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 76.2) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9657e574-12e5-4113-8f4a-bd3d4b084936")
+	)
+	(wire
+		(pts
 			(xy 20.32 64.77) (xy 26.67 64.77)
 		)
 		(stroke
@@ -5301,13 +5333,13 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 83.82) (xy 68.58 83.82)
+			(xy 62.23 73.66) (xy 62.23 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a08c3c96-fac7-4765-96a7-000a636bebf0")
+		(uuid "a119d023-4f8c-43c6-abc5-9890e5ea24bf")
 	)
 	(wire
 		(pts
@@ -5421,23 +5453,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 83.82) (xy 68.58 86.36)
+			(xy 62.23 92.71) (xy 62.23 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c1874c50-0598-4c49-bf4c-3ffc3c7fb58f")
-	)
-	(wire
-		(pts
-			(xy 45.72 96.52) (xy 45.72 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c63b438f-8b0a-4766-b977-0eff879aa2c4")
+		(uuid "cb216133-45ba-4627-9255-b89980462449")
 	)
 	(wire
 		(pts
@@ -5461,7 +5483,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 102.87) (xy 45.72 102.87)
+			(xy 62.23 76.2) (xy 62.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6b1a11-4093-435b-bdee-b99146df7eb8")
+	)
+	(wire
+		(pts
+			(xy 26.67 105.41) (xy 45.72 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5501,13 +5533,23 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 76.2) (xy 26.67 102.87)
+			(xy 26.67 76.2) (xy 26.67 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d47d63ea-3c6a-40c1-898c-5d16c999d1b5")
+	)
+	(wire
+		(pts
+			(xy 45.72 64.77) (xy 45.72 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57d70bd-5d24-4444-8c82-56696a53a927")
 	)
 	(wire
 		(pts
@@ -5551,6 +5593,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 81.28) (xy 62.23 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da2315f5-d04a-4db9-82f8-6a70f4dde57c")
+	)
+	(wire
+		(pts
 			(xy 36.83 180.34) (xy 36.83 182.88)
 		)
 		(stroke
@@ -5591,6 +5643,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 88.9) (xy 68.58 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e926a8aa-0658-45d7-bd12-f53ac88a467a")
+	)
+	(wire
+		(pts
 			(xy 27.94 127) (xy 27.94 153.67)
 		)
 		(stroke
@@ -5621,6 +5683,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 81.28) (xy 64.77 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f296bca2-d880-410e-ab85-06b5dcf5d70e")
+	)
+	(wire
+		(pts
 			(xy 36.83 182.88) (xy 43.18 182.88)
 		)
 		(stroke
@@ -5628,6 +5700,16 @@
 			(type default)
 		)
 		(uuid "f3d55217-b211-4243-8040-ed55afee17c0")
+	)
+	(wire
+		(pts
+			(xy 62.23 81.28) (xy 64.77 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5c2f831-7d09-43e8-9fd6-fd926812fd1d")
 	)
 	(wire
 		(pts
@@ -5780,7 +5862,7 @@
 		(uuid "7f82f4a9-3946-4184-80d9-f786d502957f")
 	)
 	(label "nSLEEP"
-		(at 68.58 81.28 180)
+		(at 68.58 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6097,7 +6179,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 68.58 97.79 180)
+		(at 68.58 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6105,7 +6187,7 @@
 		(dnp no)
 		(uuid "2bf2d31c-2dab-423b-ad8a-4a0dff0a6296")
 		(property "Reference" "R2"
-			(at 63.5 99.06 0)
+			(at 63.5 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6114,7 +6196,7 @@
 			)
 		)
 		(property "Value" "21.5k"
-			(at 62.992 101.092 0)
+			(at 62.992 103.632 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6123,7 +6205,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 67.564 97.536 90)
+			(at 67.564 100.076 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6132,7 +6214,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 97.79 0)
+			(at 68.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,7 +6223,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 68.58 97.79 0)
+			(at 68.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +6806,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 105.41 0)
+		(at 45.72 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6733,7 +6815,7 @@
 		(fields_autoplaced yes)
 		(uuid "56eac95d-244d-4bad-b1f9-1333563e77df")
 		(property "Reference" "#PWR02"
-			(at 45.72 111.76 0)
+			(at 45.72 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +6824,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 110.49 0)
+			(at 45.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6750,7 +6832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 105.41 0)
+			(at 45.72 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6759,7 +6841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 105.41 0)
+			(at 45.72 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6768,7 +6850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 105.41 0)
+			(at 45.72 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6852,162 +6934,6 @@
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "DRV8243HQRXYRQ1_1")
-		(lib_id "symbol:DRV8243HQRXYRQ1")
-		(at 29.21 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "606cdec6-f9c1-492f-a18a-fe7656ed80f6")
-		(property "Reference" "U1"
-			(at 27.94 90.932 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DRV8243HQRXYRQ1"
-			(at 36.068 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "DRV8243HQRXYRQ1"
-			(at 58.42 168.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 268.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Motor/Motion/Ignition Controllers & Drivers Automotive 40-V, 12-A H-Bridge driver with integrated current sensing and feedback"
-			(at 29.21 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1"
-			(at 58.42 468.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-DRV8243HQRXYRQ1"
-			(at 58.42 568.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8243HQRXYRQ1?qs=Li%252BoUPsLEnvMQk81ohmH%252BA%3D%3D"
-			(at 58.42 668.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 58.42 768.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "DRV8243HQRXYRQ1"
-			(at 58.42 868.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce2b5c70-cc47-43be-a4e6-4186ff87a51f")
-		)
-		(pin "2"
-			(uuid "32e4ec89-9b1f-480a-abd9-05fd9072166f")
-		)
-		(pin "3"
-			(uuid "63708dd6-a3c3-426d-9ae9-1a96d280fe91")
-		)
-		(pin "4"
-			(uuid "2641dfd3-e208-44e6-a4a2-91e37ee94cd2")
-		)
-		(pin "5"
-			(uuid "e8a3115b-0d27-437b-9022-f897f7dee3d3")
-		)
-		(pin "6"
-			(uuid "3192c60a-a36a-4f5c-ae49-e2920afc10e6")
-		)
-		(pin "7"
-			(uuid "44232d27-ebe3-477e-8d97-26d3ad7c53d9")
-		)
-		(pin "8"
-			(uuid "b0b74e99-154a-49f2-8df0-02657325ac3b")
-		)
-		(pin "9"
-			(uuid "b01ce5a9-01f0-4362-9b52-6ad38a0053f2")
-		)
-		(pin "10"
-			(uuid "8bf91770-173c-49b6-bec2-a05c182ec503")
-		)
-		(pin "11"
-			(uuid "c21623f8-c09d-43e9-91fc-60bd57caea7d")
-		)
-		(pin "12"
-			(uuid "79de4a85-67c9-4a2c-b38f-baf7270ab113")
-		)
-		(pin "13"
-			(uuid "d07a4538-a25f-4ac6-bb20-0c8ab2e98b2c")
-		)
-		(pin "14"
-			(uuid "5a07f143-8a25-4a7b-907f-40dbc3e3972f")
-		)
-		(instances
-			(project ""
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7241,7 +7167,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprint:IND-SMD_L12.3-W12.3"
+		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
 			(at 113.03 22.86 0)
 			(effects
 				(font
@@ -8134,7 +8060,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 68.58 90.17 90)
+		(at 68.58 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8142,7 +8068,7 @@
 		(dnp no)
 		(uuid "b1ec8af3-7dbf-4fe3-94f4-c3d668122175")
 		(property "Reference" "JP1"
-			(at 69.342 87.884 90)
+			(at 69.342 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,7 +8077,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 64.77 90.17 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,7 +8086,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 90.17 0)
+			(at 68.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8169,7 +8095,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 90.17 0)
+			(at 68.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8178,7 +8104,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 68.58 90.17 0)
+			(at 68.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8776,7 +8702,7 @@
 	)
 	(symbol
 		(lib_id "symbol:DRV8244HQRYJRQ1")
-		(at 106.68 124.46 0)
+		(at 29.21 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8785,7 +8711,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0663982-9513-4261-bcd7-a82f34b57354")
 		(property "Reference" "IC2"
-			(at 125.3333 116.84 0)
+			(at 47.8633 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,7 +8720,7 @@
 			)
 		)
 		(property "Value" "DRV8244HQRYJRQ1"
-			(at 125.3333 119.38 0)
+			(at 47.8633 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,8 +8728,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprint:DRV8244HQRYJRQ1"
-			(at 135.89 219.38 0)
+		(property "Footprint" "DRV8244HQRYJRQ1"
+			(at 58.42 171.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8813,7 +8739,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8244-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe"
-			(at 135.89 319.38 0)
+			(at 58.42 271.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8823,7 +8749,7 @@
 			)
 		)
 		(property "Description" "Motor / Motion / Ignition Controllers & Drivers Automotive 40-V, 21-A H-Bridge driver with integrated current sensing and feedback 16-VQFN-HR -40 to 125"
-			(at 106.68 124.46 0)
+			(at 29.21 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8832,7 +8758,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 135.89 519.38 0)
+			(at 58.42 471.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8842,7 +8768,7 @@
 			)
 		)
 		(property "Mouser Part Number" "595-DRV8244HQRYJRQ1"
-			(at 135.89 619.38 0)
+			(at 58.42 571.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8852,7 +8778,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8244HQRYJRQ1?qs=Y0Uzf4wQF3nQ8wZEjQlEyg%3D%3D"
-			(at 135.89 719.38 0)
+			(at 58.42 671.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8862,7 +8788,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Texas Instruments"
-			(at 135.89 819.38 0)
+			(at 58.42 771.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8872,7 +8798,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "DRV8244HQRYJRQ1"
-			(at 135.89 919.38 0)
+			(at 58.42 871.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)

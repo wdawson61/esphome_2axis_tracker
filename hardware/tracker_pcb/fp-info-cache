@@ -1,4 +1,4 @@
-26788755303451421
+26790520719447646
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106378,6 +106378,13 @@ Integrated Circuit
 0
 14
 14
+footprint
+DRV8244HQRYJRQ1
+RYJ0016A_22
+Integrated Circuit
+0
+16
+16
 footprint
 IND-SMD_L12.3-W12.3
 
