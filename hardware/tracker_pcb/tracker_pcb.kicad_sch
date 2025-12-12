@@ -5617,7 +5617,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "28c762f0-31d3-4e15-90d0-cba379399320")
+		(uuid "28c762f0-31d3-4e15-90d0-cba379399321")
 	)
 	(label "PWM1_R"
 		(at 21.59 88.9 0)
@@ -5627,7 +5627,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "28c762f0-31d3-4e15-90d0-cba379399320")
+		(uuid "28c762f0-31d3-4e15-90d0-cba379399322")
 	)
 	(label "PWM1_F"
 		(at 21.59 86.36 0)
@@ -5637,7 +5637,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "28c762f0-31d3-4e15-90d0-cba379399320")
+		(uuid "28c762f0-31d3-4e15-90d0-cba379399323")
 	)
 	(label "M2_1"
 		(at 43.18 165.1 180)
@@ -6397,7 +6397,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
 			(at 246.38 161.29 0)
 			(effects
 				(font
@@ -6872,7 +6872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
 			(at 256.54 161.29 0)
 			(effects
 				(font
@@ -8044,7 +8044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
 			(at 261.62 161.29 0)
 			(effects
 				(font
@@ -8346,7 +8346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
 			(at 251.46 161.29 0)
 			(effects
 				(font
