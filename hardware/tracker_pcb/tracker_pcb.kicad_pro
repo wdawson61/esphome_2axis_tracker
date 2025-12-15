@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1524,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -895,6 +895,18 @@
     [
       "6aaa9514-f94e-4843-90d0-16960e4e49cb",
       "Root"
+    ],
+    [
+      "4c324161-c4da-41f3-8af5-33f4b9a0442d",
+      "Power"
+    ],
+    [
+      "7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255",
+      "Motor Control DRV8244_1"
+    ],
+    [
+      "f8a23924-a799-4920-a190-8ed5e6a03d20",
+      "Motor Control DRV8244_2"
     ]
   ],
   "text_variables": {}
