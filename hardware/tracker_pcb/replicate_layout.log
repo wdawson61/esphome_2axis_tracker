@@ -1,0 +1,21 @@
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 409:Plugin executed on: 'darwin'
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 410:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 411:KiCad build version: 9.0.6
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 412:Plugin version: 4.0.3
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 413:Frame repr: <wx._core.Frame object at 0x339a1e8b0>
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 437:Preparing replicator with C3 as a reference
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 485:source anchor footprint is 'C3'
+Located on: ['/Motor Control DRV8244_2/']
+With filenames: ['motor.kicad_sch']
+With sheet_id:['/Motor Control DRV8244_2/']
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 492:Corresponding footprints are 
+[('C4', ['/Motor Control DRV8244_1/']), ('C3', ['/Motor Control DRV8244_2/'])]
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 504:Showing dialog
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 472:constructing a list of sheets suitable for replication on level:'/Motor Control DRV8244_2/', file:'motor.kicad_sch'
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 509:suitable sheets are:[['/Motor Control DRV8244_1/']]
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1512:Level selected: ['/Motor Control DRV8244_2/']
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1336:Filtering list of tracks
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 510:Toolbar position: wx.Point(226, 280)
+12-17 09:34:18 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 515:Dialog position: wx.Point(-213, 280)
+12-17 09:34:33 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 329:User canceled the dialog

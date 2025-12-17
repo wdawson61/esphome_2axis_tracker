@@ -1662,7 +1662,7 @@
 			)
 			(justify right)
 		)
-		(uuid "00577368-3fa4-4218-846a-3ef8aa8d18f5")
+		(uuid "00577368-3fa4-4218-846a-3ef8aa8d18f6")
 	)
 	(hierarchical_label "OUT2"
 		(shape input)
@@ -1684,7 +1684,7 @@
 			)
 			(justify left)
 		)
-		(uuid "1393d0d0-fa12-44e3-9f75-21847fd43f86")
+		(uuid "1393d0d0-fa12-44e3-9f75-21847fd43f87")
 	)
 	(hierarchical_label "nSLEEP"
 		(shape input)

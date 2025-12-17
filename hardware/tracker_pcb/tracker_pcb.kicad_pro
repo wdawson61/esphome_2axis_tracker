@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1524,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -842,6 +842,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -907,6 +913,10 @@
     [
       "f8a23924-a799-4920-a190-8ed5e6a03d20",
       "Motor Control DRV8244_2"
+    ],
+    [
+      "503eaca2-35bd-4283-8689-99ba385163a1",
+      "RS485"
     ]
   ],
   "text_variables": {}
