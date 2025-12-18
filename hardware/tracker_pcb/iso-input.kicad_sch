@@ -303,93 +303,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESP32-C6-EVB_Rev_A:GND"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "ESP32-C6-EVB_Rev_A:LED"
 			(pin_names
 				(offset 0)
@@ -565,6 +478,97 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_1"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1036,26 +1040,22 @@
 		(uuid "35854c9d-24f8-4e5d-9762-b590d5a662d2")
 	)
 	(junction
-		(at 120.65 90.17)
+		(at 127 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6283dfc7-2ae4-4bee-b7ac-3aeb5db8f72f")
+		(uuid "5c074f15-9083-454c-9538-fe575b299792")
 	)
 	(junction
-		(at 120.65 85.09)
+		(at 146.05 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cbe44a14-d4c1-491a-8a6e-bcfdbae39e29")
+		(uuid "68346610-9266-4aa7-bdf1-54b853100036")
 	)
-	(wire
-		(pts
-			(xy 95.25 87.63) (xy 90.17 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "002613d8-3782-4cf0-babb-2e399a332064")
+	(junction
+		(at 127 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9060769a-f825-4c56-8e03-faf04e969fde")
 	)
 	(wire
 		(pts
@@ -1066,6 +1066,16 @@
 			(type default)
 		)
 		(uuid "03528fd5-4bb0-42f6-84bc-16027ff28cb4")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 146.05 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080fb4dd-09dd-42e1-9b6a-561456c8466b")
 	)
 	(wire
 		(pts
@@ -1089,7 +1099,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 85.09) (xy 120.65 85.09)
+			(xy 130.81 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1099,13 +1109,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 90.17) (xy 95.25 87.63)
+			(xy 173.99 90.17) (xy 173.99 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "773dc8d5-2c28-4916-aa33-3dc2a2112f86")
+		(uuid "64f0ee44-7e62-4f1f-ba0a-49e6f0515e0c")
+	)
+	(wire
+		(pts
+			(xy 127 97.79) (xy 127 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5642e03-2419-4451-bc41-656f36d1ac9e")
 	)
 	(wire
 		(pts
@@ -1119,6 +1139,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 88.9) (xy 127 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac5b89af-a3ca-4bb7-a69b-908e6ceffd92")
+	)
+	(wire
+		(pts
 			(xy 179.07 68.58) (xy 179.07 71.12)
 		)
 		(stroke
@@ -1126,16 +1156,6 @@
 			(type default)
 		)
 		(uuid "ad43cc78-041b-477a-9c29-a3babaad68e0")
-	)
-	(wire
-		(pts
-			(xy 95.25 90.17) (xy 120.65 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b16c091e-8109-4bb4-95f1-1bb1614228fd")
 	)
 	(wire
 		(pts
@@ -1149,7 +1169,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 85.09) (xy 120.65 85.09)
+			(xy 110.49 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1159,7 +1179,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 90.17) (xy 120.65 90.17)
+			(xy 146.05 97.79) (xy 127 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1169,23 +1189,23 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 97.79) (xy 179.07 90.17)
+			(xy 173.99 97.79) (xy 146.05 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6fa8cfc-c10a-4815-bf8b-017b513b352a")
+		(uuid "f19798b1-04f6-4d50-a152-be3fbf31b529")
 	)
 	(wire
 		(pts
-			(xy 179.07 90.17) (xy 173.99 90.17)
+			(xy 127 97.79) (xy 127 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9df3c79-ca85-4cc7-a11b-3266d2561688")
+		(uuid "f33b5f51-277e-4122-bfd5-a7d4b7667308")
 	)
 	(hierarchical_label "ISO_GPIO"
 		(shape passive)
@@ -1197,17 +1217,6 @@
 			(justify left)
 		)
 		(uuid "0beba2ac-917a-4f2c-8801-7a13431103d1")
-	)
-	(hierarchical_label "IN-"
-		(shape passive)
-		(at 90.17 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a3a42c5-fa19-4907-a278-dc08d69fe1a8")
 	)
 	(hierarchical_label "IN+"
 		(shape passive)
@@ -1394,68 +1403,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ESP32-C6-EVB_Rev_A:GND")
-		(at 179.07 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2bd30445-82c8-46cc-be12-31665611a2eb")
-		(property "Reference" "#PWR010"
-			(at 179.07 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dfa73849-4dcb-48b6-a89a-d11f2b8ed01c")
-		)
-		(instances
-			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 179.07 74.93 0)
 		(unit 1)
@@ -1603,7 +1550,7 @@
 	)
 	(symbol
 		(lib_id "ESP32-C6-EVB_Rev_A:D_Small")
-		(at 120.65 87.63 90)
+		(at 127 91.44 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1612,7 +1559,7 @@
 		(dnp no)
 		(uuid "e3c97955-2e09-49e4-b4ef-13723b2213c6")
 		(property "Reference" "D5"
-			(at 119.38 82.55 90)
+			(at 125.73 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1568,7 @@
 			)
 		)
 		(property "Value" "1N4148W(SOD-123)"
-			(at 110.49 92.71 90)
+			(at 105.664 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,7 +1577,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 118.4148 89.9414 90)
+			(at 124.7648 93.7514 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -1640,7 +1587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 87.63 90)
+			(at 127 91.44 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -1648,7 +1595,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 87.63 0)
+			(at 127 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,6 +1612,73 @@
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "ESP32-C6-EVB_Rev_A:GND")
+		(at 127 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9cfec22-5837-4dcc-b336-8ece9f4b3a74")
+		(property "Reference" "#PWR09"
+			(at 127 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfc2415c-c803-46f0-ae8b-f47e104cb5c6")
+		)
+		(instances
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)

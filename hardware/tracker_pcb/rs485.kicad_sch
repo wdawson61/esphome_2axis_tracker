@@ -937,22 +937,34 @@
 		(uuid "2dae24d7-b607-49ca-9a2d-aa60e5dfda21")
 	)
 	(junction
-		(at 165.1 72.39)
+		(at 172.72 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47b3a3f7-e51c-4a32-a3a9-960105f47c86")
 	)
 	(junction
-		(at 165.1 85.09)
+		(at 172.72 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83c64a59-0612-448d-bc60-c7ae9a1c5db3")
+	)
+	(junction
+		(at 153.67 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "959e793f-0c6b-4275-8a95-bb164657d24e")
 	)
 	(junction
 		(at 134.62 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad976e1c-b77c-4361-973a-e22987d11276")
+	)
+	(junction
+		(at 153.67 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8b826fc-7248-4c3e-ad68-4f0b7976d172")
 	)
 	(junction
 		(at 134.62 67.31)
@@ -982,7 +994,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 85.09) (xy 165.1 85.09)
+			(xy 167.64 85.09) (xy 172.72 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1022,6 +1034,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 72.39) (xy 153.67 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab1c73c-843d-4ae6-8d2e-28c8543ccd31")
+	)
+	(wire
+		(pts
 			(xy 134.62 93.98) (xy 134.62 96.52)
 		)
 		(stroke
@@ -1042,7 +1064,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 165.1 76.2)
+			(xy 172.72 72.39) (xy 172.72 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1062,13 +1084,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 72.39) (xy 165.1 72.39)
+			(xy 167.64 72.39) (xy 172.72 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4cdc46ad-9df9-4047-920b-447b20a8716f")
+	)
+	(wire
+		(pts
+			(xy 153.67 72.39) (xy 160.02 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59824678-ac50-485c-9dbc-84f72cf0e1d4")
 	)
 	(wire
 		(pts
@@ -1082,7 +1114,17 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 85.09) (xy 167.64 85.09)
+			(xy 153.67 82.55) (xy 153.67 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6780d090-681a-4b3d-80c8-dcf33af20d5d")
+	)
+	(wire
+		(pts
+			(xy 172.72 85.09) (xy 175.26 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1102,6 +1144,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 85.09) (xy 160.02 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9006b738-5452-4127-a5f6-0f73e26e8ddb")
+	)
+	(wire
+		(pts
 			(xy 120.65 83.82) (xy 120.65 86.36)
 		)
 		(stroke
@@ -1112,7 +1164,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 167.64 72.39)
+			(xy 172.72 72.39) (xy 175.26 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1174,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 78.74) (xy 154.94 78.74)
+			(xy 160.02 78.74) (xy 162.56 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 85.09) (xy 165.1 81.28)
+			(xy 172.72 85.09) (xy 172.72 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1162,7 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 72.39) (xy 152.4 72.39)
+			(xy 148.59 72.39) (xy 153.67 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1172,7 +1224,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 85.09) (xy 152.4 85.09)
+			(xy 148.59 85.09) (xy 153.67 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1244,7 @@
 	)
 	(hierarchical_label "B"
 		(shape passive)
-		(at 167.64 85.09 0)
+		(at 175.26 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1225,7 +1277,7 @@
 	)
 	(hierarchical_label "A"
 		(shape passive)
-		(at 167.64 72.39 0)
+		(at 175.26 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1247,7 +1299,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:ESDA5V3L")
-		(at 160.02 78.74 270)
+		(at 167.64 78.74 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1255,7 +1307,7 @@
 		(dnp no)
 		(uuid "02b57fc6-c7bd-4c21-9f49-bb4c26efed13")
 		(property "Reference" "D3"
-			(at 170.434 76.454 90)
+			(at 178.054 76.454 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1263,7 +1315,7 @@
 			)
 		)
 		(property "Value" "ESDA5V3L"
-			(at 170.434 78.994 90)
+			(at 178.054 78.994 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1271,7 +1323,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 149.86 63.5 0)
+			(at 157.48 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1281,7 +1333,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/esdal.pdf"
-			(at 144.78 78.74 0)
+			(at 152.4 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1290,7 +1342,7 @@
 			)
 		)
 		(property "Description" "TVS Diode Array, 5.5V Standoff, 2 Channels, SOT23"
-			(at 147.32 78.74 0)
+			(at 154.94 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,8 +1369,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 153.67 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b8dc5fc-6271-4627-8625-bbb62aa32640")
+		(property "Reference" "R10"
+			(at 156.464 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120R"
+			(at 156.972 78.232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 152.654 78.486 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d5c643e1-ed19-4973-bf68-9e0db0cccc68")
+		)
+		(pin "1"
+			(uuid "d66ec972-0b1b-4d08-834a-47e8cc053d74")
+		)
+		(instances
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 152.4 78.74 0)
+		(at 160.02 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1327,7 +1446,7 @@
 		(fields_autoplaced yes)
 		(uuid "22d81c3e-64d6-4edd-8cfd-cfbcc64853b0")
 		(property "Reference" "#PWR07"
-			(at 152.4 85.09 0)
+			(at 160.02 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +1455,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 83.82 0)
+			(at 160.02 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1345,7 +1464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 78.74 0)
+			(at 160.02 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1354,7 +1473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 78.74 0)
+			(at 160.02 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1363,7 +1482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 78.74 0)
+			(at 160.02 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1385,7 +1504,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 156.21 72.39 90)
+		(at 163.83 72.39 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1393,7 +1512,7 @@
 		(dnp no)
 		(uuid "42308b13-584b-4a25-bd9b-fb7d77115313")
 		(property "Reference" "R4"
-			(at 155.194 68.58 90)
+			(at 162.814 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,7 +1520,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 156.464 70.358 90)
+			(at 164.084 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1409,7 +1528,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.464 71.374 90)
+			(at 164.084 71.374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1418,7 +1537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 72.39 0)
+			(at 163.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1427,7 +1546,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 156.21 72.39 0)
+			(at 163.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1662,7 +1781,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 156.21 85.09 90)
+		(at 163.83 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1670,7 +1789,7 @@
 		(dnp no)
 		(uuid "b595f441-ce03-4130-bbfb-c8330e9b927c")
 		(property "Reference" "R5"
-			(at 154.178 86.614 90)
+			(at 161.798 86.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,7 +1797,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 155.448 88.392 90)
+			(at 163.068 88.392 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1686,7 +1805,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.464 84.074 90)
+			(at 164.084 84.074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1695,7 +1814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 85.09 0)
+			(at 163.83 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1704,7 +1823,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 156.21 85.09 0)
+			(at 163.83 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -2908,18 +2908,6 @@
 			)
 			(polyline
 				(pts
-					(xy 16.51 0) (xy 16.51 1.27)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 16.51 -3.81) (xy 16.51 -5.08)
 				)
 				(stroke
@@ -2956,19 +2944,7 @@
 			)
 			(polyline
 				(pts
-					(xy 19.05 1.27) (xy 16.51 1.27)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 19.05 1.27) (xy 19.05 0)
+					(xy 19.05 0) (xy 16.51 0)
 				)
 				(stroke
 					(width 0.127)
