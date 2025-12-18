@@ -917,6 +917,10 @@
     [
       "503eaca2-35bd-4283-8689-99ba385163a1",
       "RS485"
+    ],
+    [
+      "45c78875-26ba-4b22-bc82-79a51b704824",
+      "Isolated Input"
     ]
   ],
   "text_variables": {}

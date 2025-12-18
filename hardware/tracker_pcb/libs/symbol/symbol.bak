@@ -2667,13 +2667,12 @@
 				)
 			)
 		)
-		(property "Footprint" "footprint:RJ45-TH_R-RJ45R08P-B000"
+		(property "Footprint" "footprint:RJ45-TH_R-RJ45S08P-B000"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/datasheet/R-RJ45R08P-B000/360863.html"

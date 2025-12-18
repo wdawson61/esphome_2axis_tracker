@@ -1548,7 +1548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOTFL50P160X60-8N"
+		(property "Footprint" "footprint:SOTFL50P160X60-8N"
 			(at 144.78 169.85 0)
 			(effects
 				(font
