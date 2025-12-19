@@ -2723,7 +2723,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/libs/3d/256-402.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10833,7 +10832,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/libs/3d/256-406.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13785,7 +13783,7 @@
 			(uuid "a71fb860-2d86-4dda-b5fd-cef645a2951c")
 		)
 		(embedded_fonts no)
-		(model "THVD1426DRLR.stp"
+		(model "${KIPRJMOD}/libs/3d/THVD1426DRLR.stp"
 			(offset
 				(xyz 0 0 0)
 			)
