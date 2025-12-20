@@ -1320,13 +1320,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "349aae93-aaf4-4829-8a1b-e2f5c103ea24")
+			(uuid "39c5508c-f23e-4686-8e47-f59e47a63422")
 		)
 		(pin "2"
-			(uuid "4c2899f5-4fcb-46d4-80f7-e2e2a40985f4")
+			(uuid "17e3f45a-8c6d-4952-b086-2010a9eebc1e")
 		)
 		(instances
 			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "LED3")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "LED1")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "LED2")
 					(unit 1)
@@ -1388,13 +1396,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "6996e53f-5f1c-4a36-816f-09211606b8d6")
+			(uuid "3d5cbc68-a108-4086-a8c1-9e0b4be7d9af")
 		)
 		(pin "2"
-			(uuid "851567d6-2d7c-4caa-bce4-61405a7f51d6")
+			(uuid "86ec176b-b0a4-4a0a-a877-99f34ebe91d6")
 		)
 		(instances
 			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "R14")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "R12")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "R11")
 					(unit 1)
@@ -1458,13 +1474,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd7bf465-a2ff-4eb3-b99f-3febd34a6702")
+			(uuid "4bf83208-1bcd-4668-80bd-5bd1277df9ec")
 		)
 		(pin "2"
-			(uuid "659c10f8-1910-4d16-a926-75404c911141")
+			(uuid "bb5b502f-b35d-440d-be44-cb2b15e96d83")
 		)
 		(instances
-			(project ""
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "R15")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "R13")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "R9")
 					(unit 1)
@@ -1528,19 +1552,27 @@
 			)
 		)
 		(pin "3"
-			(uuid "7b688691-00ec-4c78-9d9e-127a92fccd5e")
+			(uuid "775ce107-28f9-4ce4-91c8-d9ae8f8c2795")
 		)
 		(pin "2"
-			(uuid "8be50219-762d-4232-acef-6afccded492c")
+			(uuid "43c80fcf-45d2-41d0-9bca-12fe887267c4")
 		)
 		(pin "4"
-			(uuid "c90904af-15f3-4d17-8345-7d2262dbcef6")
+			(uuid "a17dfa91-aded-4795-a6dc-2277c693b38b")
 		)
 		(pin "1"
-			(uuid "30ead0ea-e88e-489b-b6cc-02c8aee9ec3a")
+			(uuid "2403d93c-20ad-4ab6-8707-5b644a4f453c")
 		)
 		(instances
-			(project ""
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "Q3")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "Q2")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "Q1")
 					(unit 1)
@@ -1603,13 +1635,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "5ad6fbd7-3d52-4a7b-ac66-6f862fc56295")
+			(uuid "51d49909-0fcb-465d-b803-77d23e74807f")
 		)
 		(pin "2"
-			(uuid "fc4f5c22-7132-4711-856a-f1292aab73b6")
+			(uuid "b2c3455f-2446-41f6-bb97-f5162ab08973")
 		)
 		(instances
 			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "D6")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "D4")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "D5")
 					(unit 1)
@@ -1673,10 +1713,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfc2415c-c803-46f0-ae8b-f47e104cb5c6")
+			(uuid "e1008ae7-4710-47e8-a3f3-e73010697879")
 		)
 		(instances
 			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/00dc7bbc-6624-4dc0-8ef8-528baecc0d57"
+					(reference "#PWR013")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "#PWR011")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "#PWR09")
 					(unit 1)
