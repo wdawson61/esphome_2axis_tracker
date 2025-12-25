@@ -1,2 +1,6 @@
 hardware/tracker_pcb/tracker_pcb-backups
 *.lck
+hardware/tracker_pcb/*autosave*.*
+*.*_old
+*.*-bak
+*auto_saved*
