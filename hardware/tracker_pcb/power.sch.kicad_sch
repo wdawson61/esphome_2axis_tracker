@@ -823,44 +823,50 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Diodes:Schottky,SS54"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "STPS30L30DJF-TR_1"
 			(pin_names
-				(offset 0)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 2.032 0.834 0)
+			(property "Reference" "U"
+				(at 20.32 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "STPS30L30DJF-TR"
+				(at 20.32 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "footprint:SON_0L30DJF-TR_STM"
+				(at 1.778 6.096 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SS54"
-				(at 2.032 -1.2122 0)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_JLCPCB:D_SMA"
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS54_C22452.pdf"
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -869,7 +875,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "40V Independent Type 550mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+			(property "ki_keywords" "STPS30L30DJF-TR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -878,7 +884,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C22452"
+			(property "ki_fp_filters" "SON_0L30DJF-TR_STM"
 				(at 0 0 0)
 				(effects
 					(font
@@ -887,145 +893,11 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "710485"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.044USD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Minimum Qty" "5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Attrition Qty" "4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Class" "Basic Component"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "MDD（Microdiode Electronics）"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part" "SS54"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Rectified Current" "5A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Forward Voltage (Vf@If)" "550mV@5A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Reverse Voltage (Vr)" "40V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Diode Configuration" "Independent Type"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Reverse Leakage Current (Ir)" "1mA@40V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Schottky,SS54_0_1"
+			(symbol "STPS30L30DJF-TR_1_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+						(xy 15.875 -3.175) (xy 18.415 -4.445) (xy 15.875 -5.715) (xy 15.875 -3.175) (xy 15.875 -3.175)
+						(xy 15.875 -3.175)
 					)
 					(stroke
 						(width 0.254)
@@ -1037,7 +909,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+						(xy 18.923 -3.429) (xy 18.923 -3.175) (xy 18.415 -3.175) (xy 18.415 -5.715) (xy 17.907 -5.715)
+						(xy 17.907 -5.461)
 					)
 					(stroke
 						(width 0.254)
@@ -1047,12 +920,64 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Schottky,SS54_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.81)
-					(name "~"
+				(polyline
+					(pts
+						(xy 20.32 -2.54) (xy 20.32 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -2.54) (xy 20.32 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -4.445) (xy 13.97 -4.445) (xy 13.97 -2.54) (xy 13.97 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 6.35 -2.54 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 6.35 -3.81 0)
+					(length 7.62)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1067,17 +992,107 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.81)
-					(name "~"
+				(pin unspecified line
+					(at 6.35 -5.08 0)
+					(length 7.62)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 6.35 -6.35 0)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 27.94 -2.54 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 27.94 -3.81 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 27.94 -5.08 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 27.94 -6.35 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1493,6 +1508,12 @@
 		(uuid "2ce1dd99-28c1-44d4-af1e-69e26222bb89")
 	)
 	(junction
+		(at 69.85 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3327fe09-b8b7-4cbd-879d-e28fc45bcb22")
+	)
+	(junction
 		(at 194.31 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1529,16 +1550,46 @@
 		(uuid "ae8ab9e2-5823-407a-abc5-2b75a5f92cbe")
 	)
 	(junction
+		(at 91.44 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3035e50-9d12-4dc1-b82d-5c1f18e85041")
+	)
+	(junction
+		(at 91.44 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc9c951a-585a-4994-9243-3692d7bba4a6")
+	)
+	(junction
 		(at 101.6 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d872153a-1b31-42ba-888b-246fb3954db0")
 	)
 	(junction
+		(at 69.85 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d943ba5e-5521-49e3-b5b4-5cd60872cf70")
+	)
+	(junction
+		(at 91.44 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e422e10b-6f01-4d60-a4f1-765f37b50736")
+	)
+	(junction
 		(at 111.76 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec8892f1-cf52-4abf-91ec-c3720aaa6e9e")
+	)
+	(junction
+		(at 69.85 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2804cd3-e091-4935-8d3d-0bc844013c89")
 	)
 	(junction
 		(at 158.75 106.68)
@@ -1579,6 +1630,16 @@
 			(type default)
 		)
 		(uuid "0951de82-5d15-41f5-aa38-8fd57a6aa33a")
+	)
+	(wire
+		(pts
+			(xy 69.85 90.17) (xy 69.85 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09bacc9e-0e41-43c1-a224-c810924628aa")
 	)
 	(wire
 		(pts
@@ -1652,6 +1713,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 90.17) (xy 91.44 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29183e44-c3c3-4ec1-9655-29fcf95fd27f")
+	)
+	(wire
+		(pts
 			(xy 156.21 97.79) (xy 181.61 97.79)
 		)
 		(stroke
@@ -1659,6 +1730,16 @@
 			(type default)
 		)
 		(uuid "2ac4ef95-3337-4551-b642-3c534a142e9e")
+	)
+	(wire
+		(pts
+			(xy 91.44 87.63) (xy 96.52 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e8d08e-5f58-4ad0-8aa4-2b52399400c1")
 	)
 	(wire
 		(pts
@@ -1702,16 +1783,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 87.63) (xy 96.52 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5794d9ad-b5ac-4b71-a277-28fa7aee2ec7")
-	)
-	(wire
-		(pts
 			(xy 96.52 87.63) (xy 96.52 93.98)
 		)
 		(stroke
@@ -1732,6 +1803,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 88.9) (xy 69.85 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cabffd6-025d-468e-b391-328100bda862")
+	)
+	(wire
+		(pts
 			(xy 181.61 97.79) (xy 181.61 99.06)
 		)
 		(stroke
@@ -1742,7 +1823,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 87.63) (xy 86.36 87.63)
+			(xy 69.85 87.63) (xy 69.85 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e18a696-3595-4ece-a3ae-0ca41a534442")
+	)
+	(wire
+		(pts
+			(xy 62.23 87.63) (xy 69.85 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1809,6 +1900,16 @@
 			(type default)
 		)
 		(uuid "7f6250ef-73e0-4f43-b2f6-32a17d5de49d")
+	)
+	(wire
+		(pts
+			(xy 91.44 88.9) (xy 91.44 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd80215-853e-461e-96ac-89b61dba801a")
 	)
 	(wire
 		(pts
@@ -1909,6 +2010,16 @@
 			(type default)
 		)
 		(uuid "c9b1dd54-ab28-4c3a-bfeb-e9b622f27a30")
+	)
+	(wire
+		(pts
+			(xy 91.44 91.44) (xy 91.44 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd57274-fbed-4e75-b465-ab45ae443e55")
 	)
 	(wire
 		(pts
@@ -2014,7 +2125,7 @@
 	)
 	(hierarchical_label "VRAW"
 		(shape input)
-		(at 82.55 87.63 180)
+		(at 62.23 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2883,6 +2994,95 @@
 		)
 	)
 	(symbol
+		(lib_name "STPS30L30DJF-TR_1")
+		(lib_id "symbol:STPS30L30DJF-TR")
+		(at 63.5 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd6b4d3b-04b4-44e6-bf2a-94fa5cad5aac")
+		(property "Reference" "U4"
+			(at 80.645 82.55 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "STPS30L30DJF-TR"
+			(at 80.645 85.09 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprint:SON_0L30DJF-TR_STM"
+			(at 65.278 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ac8edbe-fae7-4325-9de0-26b71949234b")
+		)
+		(pin "2"
+			(uuid "f9f7bc7b-bfec-4538-9439-5541a2a8ad1e")
+		)
+		(pin "3"
+			(uuid "6c68f80e-bed2-40c7-9072-6d1849985ab3")
+		)
+		(pin "4"
+			(uuid "149d0171-388a-44e0-b044-4f74a428fbf6")
+		)
+		(pin "8"
+			(uuid "934a3032-edfa-4a95-8e13-8d860226f75e")
+		)
+		(pin "7"
+			(uuid "4e58f87f-b1c0-4cde-9e2e-f3456238bc64")
+		)
+		(pin "6"
+			(uuid "c097ebf9-ffa4-4338-9787-8017bccb083f")
+		)
+		(pin "5"
+			(uuid "5590905c-2056-4d8d-b5ac-38db948668fb")
+		)
+		(instances
+			(project ""
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/4c324161-c4da-41f3-8af5-33f4b9a0442d"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 158.75 102.87 0)
 		(unit 1)
@@ -3016,209 +3216,6 @@
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/4c324161-c4da-41f3-8af5-33f4b9a0442d"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS54")
-		(at 90.17 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb37785f-eb94-4d94-aa63-36818690a78e")
-		(property "Reference" "D1"
-			(at 90.4875 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS54"
-			(at 90.4875 83.82 90)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 90.17 89.408 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS54_C22452.pdf"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V Independent Type 550mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22452"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "710485"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.044USD"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "5"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "4"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "SS54"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rectified Current" "5A"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Forward Voltage (Vf@If)" "550mV@5A"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Reverse Voltage (Vr)" "40V"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Diode Configuration" "Independent Type"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Reverse Leakage Current (Ir)" "1mA@40V"
-			(at 90.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ab5718e2-998f-47a6-a1f2-e52d3a0478af")
-		)
-		(pin "1"
-			(uuid "374c304f-1c27-4eba-a86f-6f5d93ff0900")
-		)
-		(instances
-			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/4c324161-c4da-41f3-8af5-33f4b9a0442d"
-					(reference "D1")
 					(unit 1)
 				)
 			)

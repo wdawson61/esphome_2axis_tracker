@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "6aaa9514-f94e-4843-90d0-16960e4e49cb")
 	(paper "A4")
+	(title_block
+		(title "MOtor2ISOlatedInput4")
+		(date "2025-12-15")
+		(rev "-")
+		(company "WadeCo Electronics")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x12"
 			(pin_names
@@ -1304,6 +1310,271 @@
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Diodes:Schottky,SS54"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SS54"
+				(at 2.032 -1.2122 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SMA"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS54_C22452.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V Independent Type 550mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C22452"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Stock" "710485"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.044USD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Minimum Qty" "5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Attrition Qty" "4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "MDD（Microdiode Electronics）"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part" "SS54"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rectified Current" "5A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Forward Voltage (Vf@If)" "550mV@5A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Reverse Voltage (Vr)" "40V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Diode Configuration" "Independent Type"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Reverse Leakage Current (Ir)" "1mA@40V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Schottky,SS54_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Schottky,SS54_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3045,12 +3316,6 @@
 		(uuid "d6bf2546-0612-49ce-a367-ff93a4226e8d")
 	)
 	(junction
-		(at 57.15 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04bf9ffe-2fe4-44ce-a2a3-5baf9bb15fb7")
-	)
-	(junction
 		(at 146.05 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3135,12 +3400,6 @@
 		(uuid "80f0b134-4be9-427d-8598-6e0d8b36db4b")
 	)
 	(junction
-		(at 57.15 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82361eae-0af1-4994-9568-0687dcb02f5c")
-	)
-	(junction
 		(at 57.15 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3175,18 +3434,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9d0675f-5852-487b-88fb-29cbfec29972")
-	)
-	(junction
-		(at 57.15 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c99a71c7-d320-4d9b-b8d5-288ff09dbdd0")
-	)
-	(junction
-		(at 57.15 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cddcd1bb-7f70-40b0-9ef8-e717dff4d6b9")
 	)
 	(junction
 		(at 233.68 104.14)
@@ -3349,6 +3596,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 90.17) (xy 156.21 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0257572d-902d-4be5-a49e-98d8cf286c66")
+	)
+	(wire
+		(pts
 			(xy 138.43 148.59) (xy 140.97 148.59)
 		)
 		(stroke
@@ -3416,16 +3673,6 @@
 			(type default)
 		)
 		(uuid "0cd41484-a06e-4f52-8770-b0cc0917ba0c")
-	)
-	(wire
-		(pts
-			(xy 57.15 95.25) (xy 72.39 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d2603a5-c89e-4b2e-aee0-6268b3cc34c1")
 	)
 	(wire
 		(pts
@@ -3566,16 +3813,6 @@
 			(type default)
 		)
 		(uuid "27564528-dbdc-410e-97aa-c1b6f072955d")
-	)
-	(wire
-		(pts
-			(xy 57.15 151.13) (xy 57.15 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "288d7e4d-ff0d-4f0a-9bd5-18d47a1cc4b9")
 	)
 	(wire
 		(pts
@@ -3829,6 +4066,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 90.17) (xy 166.37 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47684c1f-e88d-4473-800c-b1b15d9da017")
+	)
+	(wire
+		(pts
 			(xy 41.91 88.9) (xy 41.91 135.89)
 		)
 		(stroke
@@ -3906,16 +4153,6 @@
 			(type default)
 		)
 		(uuid "4d08a407-0137-4376-bf1f-d364342ebf50")
-	)
-	(wire
-		(pts
-			(xy 57.15 83.82) (xy 57.15 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d3c84cb-dcc3-46fa-9ca6-5da5b55a62a7")
 	)
 	(wire
 		(pts
@@ -4069,16 +4306,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 67.31) (xy 57.15 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65a539a0-e2b7-4cde-aef5-9fbe56f114bf")
-	)
-	(wire
-		(pts
 			(xy 151.13 146.05) (xy 135.89 146.05)
 		)
 		(stroke
@@ -4119,6 +4346,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 95.25) (xy 72.39 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c76f7ce-9817-4722-85df-2185aeea1c58")
+	)
+	(wire
+		(pts
 			(xy 54.61 91.44) (xy 72.39 91.44)
 		)
 		(stroke
@@ -4136,6 +4373,16 @@
 			(type default)
 		)
 		(uuid "6fd76702-7ac9-4619-8391-6b0045bad3fd")
+	)
+	(wire
+		(pts
+			(xy 68.58 67.31) (xy 72.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7119ee16-40e2-4dda-8798-c47671ff814c")
 	)
 	(wire
 		(pts
@@ -4179,7 +4426,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 123.19) (xy 57.15 111.76)
+			(xy 57.15 111.76) (xy 57.15 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4309,16 +4556,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 95.25) (xy 57.15 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "814e75bb-aa9c-4523-8424-9704832090db")
-	)
-	(wire
-		(pts
 			(xy 88.9 77.47) (xy 88.9 80.01)
 		)
 		(stroke
@@ -4326,16 +4563,6 @@
 			(type default)
 		)
 		(uuid "81c3025e-b455-44fe-84dc-ff6b8fd66c3a")
-	)
-	(wire
-		(pts
-			(xy 57.15 123.19) (xy 57.15 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84e0d812-c917-40b3-b5fe-2148a2580e46")
 	)
 	(bus
 		(pts
@@ -4406,6 +4633,16 @@
 			(type default)
 		)
 		(uuid "8d742757-9828-453b-9dd2-2e1043467346")
+	)
+	(wire
+		(pts
+			(xy 69.85 151.13) (xy 72.39 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95441f7e-cc28-4e3e-a4c9-89904b8ea067")
 	)
 	(bus
 		(pts
@@ -4596,6 +4833,16 @@
 			(type default)
 		)
 		(uuid "aa1c5b2b-1597-41be-a922-d919f3775e72")
+	)
+	(wire
+		(pts
+			(xy 69.85 123.19) (xy 72.39 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b08b9347-d9f2-4571-8988-dce711ced3f8")
 	)
 	(wire
 		(pts
@@ -4869,23 +5116,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 95.25) (xy 57.15 83.82)
+			(xy 57.15 83.82) (xy 57.15 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d2576b77-f37d-414a-a9c4-011f7be2b6d6")
-	)
-	(wire
-		(pts
-			(xy 57.15 123.19) (xy 72.39 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d48b9aa4-6111-4337-99ce-03f4d1f9c84d")
 	)
 	(wire
 		(pts
@@ -4916,16 +5153,6 @@
 			(type default)
 		)
 		(uuid "d8c41f3d-62bd-4607-9e83-f6fa4c56f886")
-	)
-	(wire
-		(pts
-			(xy 57.15 151.13) (xy 72.39 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d94412d1-05a3-4d85-bd7e-8bdf72c615ea")
 	)
 	(wire
 		(pts
@@ -5039,16 +5266,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 90.17) (xy 166.37 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1332080-b7fc-412a-8ce5-45ad6dab95e1")
-	)
-	(wire
-		(pts
 			(xy 128.27 146.05) (xy 125.73 146.05)
 		)
 		(stroke
@@ -5099,7 +5316,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 55.88) (xy 57.15 67.31)
+			(xy 57.15 55.88) (xy 57.15 83.82)
 		)
 		(stroke
 			(width 0)
@@ -5407,6 +5624,50 @@
 			)
 		)
 	)
+	(global_label "V3V3"
+		(shape input)
+		(at 69.85 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4bc9a11d-332e-4a6c-9e78-cbbb0c157be1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.2686 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape input)
+		(at 69.85 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6cb48840-d9a4-497d-9c40-9e19929c8439")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.2686 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VRPP"
 		(shape input)
 		(at 73.66 139.7 0)
@@ -5447,6 +5708,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape input)
+		(at 68.58 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a60739aa-fca5-4760-b510-bb65721f162a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.9986 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5513,6 +5796,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V3V3"
+		(shape input)
+		(at 69.85 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8001c05-466c-402a-a42f-dcb598e71e21")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.2686 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6654,6 +6959,208 @@
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS54")
+		(at 160.02 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "727fbc5f-74b4-4994-85c5-66968ae5cdd0")
+		(property "Reference" "D8"
+			(at 163.068 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SBR2U30P1-7"
+			(at 159.7025 86.36 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_PowerDI-123"
+			(at 160.02 88.392 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS54_C22452.pdf"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V Independent Type 550mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22452"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "710485"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.044USD"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "5"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "4"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MDD（Microdiode Electronics）"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "SS54"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rectified Current" "5A"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "550mV@5A"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "40V"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Diode Configuration" "Independent Type"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Reverse Leakage Current (Ir)" "1mA@40V"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d4ff736f-73ce-4519-a1ac-63f17e7ed8cc")
+		)
+		(pin "1"
+			(uuid "6f7ec322-8997-4625-8d90-cec8245f22d4")
+		)
+		(instances
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -8035,16 +8542,6 @@
 				(justify left)
 			)
 		)
-		(pin "VDD" input
-			(at 72.39 95.25 180)
-			(uuid "5b194d54-f540-4ecf-9788-1e9ce1edf83e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ISO_GPIO" passive
 			(at 90.17 92.71 0)
 			(uuid "49f268cb-d09c-42a5-ac0b-ea9cf1a5589a")
@@ -8058,6 +8555,16 @@
 		(pin "IN-" passive
 			(at 72.39 99.06 180)
 			(uuid "38dd4387-dd6d-4ec5-bc41-ece5c59d0c8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 72.39 95.25 180)
+			(uuid "5afcd774-aa09-49e5-9911-6c154434f9ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8117,16 +8624,6 @@
 				(justify left)
 			)
 		)
-		(pin "VDD" input
-			(at 72.39 151.13 180)
-			(uuid "a2854f92-f88e-4057-8842-c650171a09bb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ISO_GPIO" passive
 			(at 90.17 148.59 0)
 			(uuid "06991df1-75e9-477d-bc3b-a116ecbcc20d")
@@ -8140,6 +8637,16 @@
 		(pin "IN-" passive
 			(at 72.39 154.94 180)
 			(uuid "831a472f-cbe2-41ba-a448-557b94faecfa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 72.39 151.13 180)
+			(uuid "37577118-fe63-46cb-8105-6366c5e5f388")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8199,16 +8706,6 @@
 				(justify left)
 			)
 		)
-		(pin "VDD" input
-			(at 72.39 67.31 180)
-			(uuid "4c63f76f-dc14-4066-8be7-2b4d6bc1791e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ISO_GPIO" passive
 			(at 90.17 64.77 0)
 			(uuid "61e4e06a-864c-4c5d-9cc0-73eeceeee452")
@@ -8222,6 +8719,16 @@
 		(pin "IN-" passive
 			(at 72.39 71.12 180)
 			(uuid "ddf77bec-faf6-46f3-bf52-64089e4f192e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 72.39 67.31 180)
+			(uuid "3ae0beee-6d28-404e-b11c-31ac0f4c903c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8547,16 +9054,6 @@
 				(justify left)
 			)
 		)
-		(pin "VDD" input
-			(at 72.39 123.19 180)
-			(uuid "cce8ed59-ed75-4917-bd44-dfa90179be34")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ISO_GPIO" passive
 			(at 90.17 120.65 0)
 			(uuid "e6d739b2-cf4f-4868-8464-da6d2e3d7a6f")
@@ -8570,6 +9067,16 @@
 		(pin "IN-" passive
 			(at 72.39 127 180)
 			(uuid "b8182ce1-5ef4-42ce-ac84-511842c0e33f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 72.39 123.19 180)
+			(uuid "84abe985-0558-4e40-aabd-5880552d0225")
 			(effects
 				(font
 					(size 1.27 1.27)
