@@ -20578,7 +20578,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "/Power/VRAW")
 			(pintype "unspecified")
-			(uuid "b307cafb-d15d-4178-bb31-c4a1332dd752")
+			(uuid "a840de66-60e4-4dba-88bd-4eeac92694fa")
 		)
 		(pad "A" smd rect
 			(at -3.275 -1.565 90)
@@ -20586,7 +20586,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "/Power/VRAW")
 			(pintype "unspecified")
-			(uuid "b307cafb-d15d-4178-bb31-c4a1332dd752")
+			(uuid "6a05fa13-ba1f-4b11-8671-fce945a6eacf")
 		)
 		(pad "A" smd rect
 			(at -3.275 -0.295 90)
@@ -20594,7 +20594,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "/Power/VRAW")
 			(pintype "unspecified")
-			(uuid "b307cafb-d15d-4178-bb31-c4a1332dd752")
+			(uuid "11735c8a-c487-41d0-9cb5-030b1a48eb1c")
 		)
 		(pad "K" smd custom
 			(at 2.175 -4.105 90)
@@ -30729,7 +30729,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "2 45A H-BRIDGE 6-30VDC\n4 OPTO INS 6-30VDC"
+	(gr_text "2 21A H-BRIDGE 6-30VDC\n4 OPTO INS 6-30VDC"
 		(at 207.85 109.1 90)
 		(layer "F.SilkS")
 		(uuid "911a2b2a-530d-4469-b1c1-70efe8c2c935")
@@ -60244,7 +60244,7 @@
 		)
 		(polygon
 			(pts
-				(xy 158 68.3) (xy 158 68.3) (xy 158 67.3) (xy 148 67.3) (xy 148 82) (xy 158 82)
+				(xy 158 68.3) (xy 158 67.3) (xy 148 67.3) (xy 148 82) (xy 158 82)
 			)
 		)
 		(filled_polygon
