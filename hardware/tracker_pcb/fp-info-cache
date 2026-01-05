@@ -1,4 +1,4 @@
-26806419674576443
+26822326581766175
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106365,12 +106365,33 @@ Varistor VF
 2
 2
 footprint
+114993390
+12-SMD Module
+Integrated Circuit
+0
+12
+12
+footprint
+AMPHENOL_10155435-00011LF
+
+
+0
+16
+16
+footprint
 BGA6C100X50P2X3_HDC2010YPAR
 
 
 0
 6
 6
+footprint
+BGA8C50P2X4_89X189X50
+DSBGA
+Integrated Circuit
+0
+8
+8
 footprint
 CONN2_2601-1102_WAG
 
@@ -106406,6 +106427,20 @@ JST_B4B-PH-K-S
 0
 4
 4
+footprint
+JST_B4B-XH-A
+
+
+0
+4
+4
+footprint
+JST_B6B-PH-K-S
+
+
+0
+6
+6
 footprint
 LTV-817S_LTO
 
@@ -106470,12 +106505,19 @@ DRV8245HQRXZRQ1
 16
 16
 footprint
+SKRKAEE020
+SKRKAEE020
+Switch
+0
+2
+2
+footprint
 SON_0L30DJF-TR_STM
 
 STPS30L30DJF-TR 
 0
-8
-8
+5
+2
 footprint
 SOT95P280X110-6N
 DDC
@@ -106498,9 +106540,30 @@ TE_1-282834-2
 12
 12
 footprint
+VREG_TLV1117LV33DCYR
+
+
+0
+4
+4
+footprint
 WAGO_256-406
 
 
 0
 12
 12
+footprint
+XCVR_ESP32-C6-MINI-1U-N4
+
+
+0
+61
+61
+footprint
+XTAL_CM7V-T1A-32.768KHZ-6PF-20PPM-TA-QC
+
+
+0
+2
+2
