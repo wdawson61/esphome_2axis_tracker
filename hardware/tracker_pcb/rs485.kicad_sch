@@ -1286,7 +1286,7 @@
 		)
 		(uuid "c40923c5-c5d5-4214-8d42-0e8139e4cf1f")
 	)
-	(hierarchical_label "VDD"
+	(hierarchical_label "V33"
 		(shape passive)
 		(at 134.62 62.23 90)
 		(effects
@@ -1306,7 +1306,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02b57fc6-c7bd-4c21-9f49-bb4c26efed13")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 178.054 76.454 90)
 			(effects
 				(font
@@ -1350,19 +1350,28 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C87911"
+			(at 178.054 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
-			(uuid "fa5d0250-a299-4fcf-baa4-0659baff28d3")
+			(uuid "5073bec8-1314-485f-bd9e-df53d287421d")
 		)
 		(pin "1"
-			(uuid "408ec871-5d90-4ba6-987d-e11d26e5c5b1")
+			(uuid "a789f04c-dbf1-41f2-8607-7b0c93a09046")
 		)
 		(pin "2"
-			(uuid "dbb88e37-a4d0-40a6-a8ba-3b66cc9fb0ed")
+			(uuid "623d1207-64db-43e9-a836-42df84ca20fd")
 		)
 		(instances
-			(project ""
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "D3")
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -1377,7 +1386,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b8dc5fc-6271-4627-8625-bbb62aa32640")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 156.464 76.454 0)
 			(effects
 				(font
@@ -1421,15 +1430,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d5c643e1-ed19-4973-bf68-9e0db0cccc68")
+			(uuid "43e97ba0-0179-4b25-8f09-61765e75afa0")
 		)
 		(pin "1"
-			(uuid "d66ec972-0b1b-4d08-834a-47e8cc053d74")
+			(uuid "ca520efa-362d-47d0-9281-29e3605da885")
 		)
 		(instances
 			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "R7")
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -1445,7 +1454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22d81c3e-64d6-4edd-8cfd-cfbcc64853b0")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR015"
 			(at 160.02 85.09 0)
 			(effects
 				(font
@@ -1491,12 +1500,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c97212a1-594d-4e86-86f1-0cefc5cbabcb")
+			(uuid "5355e6b0-8253-4655-b161-737553f2895e")
 		)
 		(instances
 			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "#PWR014")
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -1511,7 +1520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42308b13-584b-4a25-bd9b-fb7d77115313")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 162.814 68.58 90)
 			(effects
 				(font
@@ -1555,15 +1564,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "91329b3c-03fd-4bb1-a147-7482bc8939b6")
+			(uuid "37185765-1f4c-4d5b-a16a-9976a2f90c03")
 		)
 		(pin "1"
-			(uuid "d253e0c1-7762-43b5-a1cc-0b2f1fb61080")
+			(uuid "d53ebbee-d02f-4bbd-93c1-ca5e2a0adb26")
 		)
 		(instances
-			(project ""
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "R8")
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -1579,7 +1588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56dc08da-6ca8-4694-9cd3-ad40160d4ed3")
-		(property "Reference" "C16"
+		(property "Reference" "C18"
 			(at 124.46 88.8999 0)
 			(effects
 				(font
@@ -1624,16 +1633,25 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1590"
+			(at 124.46 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "2e70efad-b8c6-4150-b1e1-40f8d6dd9a8e")
+			(uuid "f98d1dc3-abde-4712-9c6a-de5b4542cc19")
 		)
 		(pin "1"
-			(uuid "f7186fb2-55b8-44a2-86c0-f90812a385b1")
+			(uuid "7bb44106-b826-42eb-87c5-a0463485b928")
 		)
 		(instances
-			(project ""
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "C16")
+			(project "tracker_pcb"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1746,33 +1764,42 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5215922"
+			(at 136.7633 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "f763029f-c704-4e02-be82-481bc6211cd9")
+			(uuid "57184580-413a-46da-8e81-e81cba5b3513")
 		)
 		(pin "2"
-			(uuid "4fe91ebc-0669-4734-b050-c8bbf8c42833")
+			(uuid "8b3dd578-c863-42d3-8d5d-f128565f574c")
 		)
 		(pin "3"
-			(uuid "a53e7e92-7a92-4c67-8a6b-39039dc386ea")
+			(uuid "cd96498e-76fe-4e47-b7ee-685b36f99d14")
 		)
 		(pin "4"
-			(uuid "586c7e31-18f2-429f-b5bf-4cb53759f969")
+			(uuid "5e08b056-9b79-4201-8d8e-7f3b6a5aa651")
 		)
 		(pin "5"
-			(uuid "726855f3-a23c-4aa9-aeeb-11fe7a866e90")
+			(uuid "0e8417ba-4110-4449-bad4-caeb12debbbd")
 		)
 		(pin "6"
-			(uuid "5c1e4a71-927f-4316-b8de-2d31edada2de")
+			(uuid "f3fff4c5-862a-418f-b8e0-6a9641518902")
 		)
 		(pin "7"
-			(uuid "95cb7420-0397-4687-bae5-969915c58bc8")
+			(uuid "a95b652b-ee2e-4820-a8e8-8831fafacd14")
 		)
 		(pin "8"
-			(uuid "a6ca7052-d651-4fea-b775-34d9d9ed4756")
+			(uuid "a6644190-43c6-4195-b3d3-2d81a6ec3928")
 		)
 		(instances
 			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
 					(reference "IC3")
 					(unit 1)
 				)
@@ -1788,7 +1815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b595f441-ce03-4130-bbfb-c8330e9b927c")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 161.798 86.614 90)
 			(effects
 				(font
@@ -1832,15 +1859,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ea0366e3-abeb-4302-b702-2192b73854f5")
+			(uuid "42d1c92c-e909-467f-affc-fe592781b252")
 		)
 		(pin "1"
-			(uuid "4f0db990-060a-41fb-9e60-e26c13a8be76")
+			(uuid "207f23b4-831f-4d5f-b977-cf4436a10fa8")
 		)
 		(instances
 			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "R9")
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -1856,7 +1883,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb177109-e58d-43b8-ae7b-6f61d080ff7a")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 134.62 102.87 0)
 			(effects
 				(font
@@ -1901,12 +1928,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f70c20a8-260a-4b77-867c-5cae7a0f86b1")
+			(uuid "429d545d-11df-4ce6-bd38-220315b0949d")
 		)
 		(instances
 			(project "tracker_pcb"
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/503eaca2-35bd-4283-8689-99ba385163a1"
-					(reference "#PWR013")
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
