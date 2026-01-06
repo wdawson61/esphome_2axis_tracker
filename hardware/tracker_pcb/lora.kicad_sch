@@ -267,7 +267,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "114993390"
+			(property "Footprint" "footprint:114993390"
 				(at 29.21 -94.92 0)
 				(effects
 					(font
@@ -1194,7 +1194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "114993390"
+		(property "Footprint" "footprint:114993390"
 			(at 139.7 166.04 0)
 			(effects
 				(font
