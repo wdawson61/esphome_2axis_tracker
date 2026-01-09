@@ -1429,6 +1429,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22787"
+			(at 156.464 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "43e97ba0-0179-4b25-8f09-61765e75afa0")
 		)
@@ -1556,6 +1565,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 163.83 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22859"
+			(at 162.814 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,6 +1869,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 163.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22859"
+			(at 161.798 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)

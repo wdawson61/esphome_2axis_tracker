@@ -2253,7 +2253,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "780R"
+		(property "Value" "820R"
 			(at 223.774 65.786 0)
 			(effects
 				(font
@@ -2282,6 +2282,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 229.87 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23253"
+			(at 223.774 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4750,6 +4750,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23345"
+			(at 88.646 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ebe07dc-93b8-4d13-b56e-0bf25902065d")
 		)
@@ -4810,6 +4819,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 92.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 88.646 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4962,6 +4980,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23186"
+			(at 65.532 70.866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "74a85f9a-5506-455b-83fd-fbf4753852d1")
 		)
@@ -5092,6 +5119,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 147.32 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5442,6 +5478,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C20627095"
+			(at 196.85 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "75488a1e-dfc0-41b4-9be9-8b72fd0a677d")
 		)
@@ -5688,6 +5733,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1591"
+			(at 143.764 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "597d2a58-45d0-495d-b72c-b535fd2d9d7c")
 		)
@@ -5750,6 +5804,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 151.13 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 153.924 104.648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,6 +5957,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2653305"
+			(at 130.4133 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "D1"
 			(uuid "c8fc2501-3001-46ee-87c1-801110bca696")
 		)
@@ -5972,6 +6044,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 65.532 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6119,6 +6200,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7519"
+			(at 81.6611 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ffbdf09c-d968-4b7b-9164-aac8e6e6d60d")
 		)
@@ -6201,6 +6291,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 137.16 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "600fe620-bd57-4e52-a45c-4940dde2bb72")
 		)
@@ -6262,6 +6361,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 156.21 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,6 +6447,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C115357"
+			(at 130.81 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ea58f6f2-fc9e-4d58-85ae-cf951e7b9e39")
 		)
@@ -6400,6 +6517,15 @@
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 46.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5184243"
+			(at 46.99 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6515,6 +6641,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C115357"
+			(at 140.97 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
