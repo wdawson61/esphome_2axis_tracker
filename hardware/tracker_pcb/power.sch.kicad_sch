@@ -924,154 +924,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "symbol:STPS30L30DJF-TR"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "STPS30L30DJF-TR"
-				(at 20.32 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "footprint:SON_0L30DJF-TR_STM"
-				(at 1.778 6.096 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "STPS30L30DJF-TR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SON_0L30DJF-TR_STM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "STPS30L30DJF-TR_0_1"
-				(polyline
-					(pts
-						(xy 16.51 -3.81) (xy 19.05 -5.08) (xy 16.51 -6.35) (xy 16.51 -3.81) (xy 16.51 -3.81) (xy 16.51 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 19.685 -4.064) (xy 19.685 -3.81) (xy 19.177 -3.81) (xy 19.177 -6.35) (xy 18.669 -6.35) (xy 18.669 -6.096)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 20.32 -2.54) (xy 20.32 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "STPS30L30DJF-TR_1_1"
-				(pin unspecified line
-					(at 13.97 -5.08 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 21.59 -5.08 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "symbol:TLV1117LV33DCYR"
 			(pin_names
 				(offset 1.016)
@@ -1764,6 +1616,278 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "symbol:V60D60C-M3_I"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 25.4 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "V60D60C-M3/I"
+				(at 25.4 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "footprint:DPAK_60C-M3&slash_I_VIS"
+				(at 13.462 4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?87554"
+				(at 13.716 -4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "V60D60C-M3/I"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DPAK_60C-M3/I_VIS DPAK_60C-M3/I_VIS-M DPAK_60C-M3/I_VIS-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "V60D60C-M3_I_0_1"
+				(polyline
+					(pts
+						(xy 20.32 2.54) (xy 25.4 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -2.54) (xy 20.32 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -2.54) (xy 25.4 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -7.62) (xy 25.4 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -12.7) (xy 20.32 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 20.32 -12.7) (xy 25.4 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 -2.54) (xy 25.4 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 -10.16) (xy 29.21 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 -12.7) (xy 25.4 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 -12.7) (xy 25.4 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 29.21 0) (xy 25.4 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 29.21 -10.16) (xy 29.21 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -10.16 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 181.61 87.63)
@@ -1928,6 +2052,12 @@
 		(uuid "ec8892f1-cf52-4abf-91ec-c3720aaa6e9e")
 	)
 	(junction
+		(at 72.39 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f57ff382-9f64-4b06-9d84-0e1c1551028c")
+	)
+	(junction
 		(at 158.75 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2009,7 +2139,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 90.17 96.52)
+			(xy 82.55 106.68) (xy 90.17 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2046,6 +2176,16 @@
 			(type default)
 		)
 		(uuid "19ec4d97-b330-4c17-86ff-226dc4c669fb")
+	)
+	(wire
+		(pts
+			(xy 62.23 87.63) (xy 72.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbb92b7-a74d-4a61-9b8d-42753ecb67eb")
 	)
 	(wire
 		(pts
@@ -2219,6 +2359,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 82.55) (xy 72.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5abe09c0-dd73-49ac-82d3-df540be0d3c9")
+	)
+	(wire
+		(pts
 			(xy 236.22 43.18) (xy 236.22 46.99)
 		)
 		(stroke
@@ -2236,16 +2386,6 @@
 			(type default)
 		)
 		(uuid "5d1878ca-c6d6-4267-a42e-311539eba891")
-	)
-	(wire
-		(pts
-			(xy 62.23 87.63) (xy 78.74 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6332f6a5-c9a1-4c4f-a90f-e253cbc28c58")
 	)
 	(wire
 		(pts
@@ -2609,6 +2749,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 87.63) (xy 72.39 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c1b636-90c9-49de-94ac-59f15da22573")
+	)
+	(wire
+		(pts
 			(xy 90.17 67.31) (xy 128.27 67.31)
 		)
 		(stroke
@@ -2646,16 +2796,6 @@
 			(type default)
 		)
 		(uuid "df5cb5bd-6b68-4b6a-8acd-baccdb981377")
-	)
-	(wire
-		(pts
-			(xy 90.17 96.52) (xy 90.17 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2688e6c-21b1-4f5f-8258-be345297e920")
 	)
 	(wire
 		(pts
@@ -2719,7 +2859,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 82.55 96.52 180)
+		(at 82.55 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2729,7 +2869,7 @@
 		)
 		(uuid "843985f3-80c9-4bfb-b4a0-924126468303")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.6943 96.52 0)
+			(at 75.6943 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4103,7 +4243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2117.pdf?ts=1768062676098&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS2117%252Fpart-details%252FTPS2117DRLR%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dapp-null-null-app_opn_en-cpc-storeic-google-ww_en_pur%2526utm_content%253DDevice%2526ds_k%253DTPS2117DRLR%2526DCM%253Dyes%2526gclsrc%253Daw.ds%2526gad_source%253D1%2526gad_campaignid%253D18950597671%2526gbraid%253D0AAAAAC068F3NAfpLrBYv5TVkBwdQ7VKTc%2526gclid%253DCjwKCAiAjojLBhAlEiwAcjhrDoGEAmqFiV8xqXebAUJoi0uhbEGXIRQUOlSnADgKFNQGyquWk8rHzBoCddYQAvD_BwE"
 			(at 167.64 36.83 0)
 			(effects
 				(font
@@ -4361,33 +4501,33 @@
 		)
 	)
 	(symbol
-		(lib_id "symbol:STPS30L30DJF-TR")
-		(at 64.77 82.55 0)
+		(lib_id "symbol:V60D60C-M3_I")
+		(at 54.61 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd6b4d3b-04b4-44e6-bf2a-94fa5cad5aac")
-		(property "Reference" "U2"
-			(at 81.915 80.01 0)
+		(uuid "c1d9a6c8-1680-4e23-855b-ef6cb716669c")
+		(property "Reference" "CR1"
+			(at 79.375 74.93 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "STPS30L30DJF-TR"
-			(at 81.915 82.55 0)
+		(property "Value" "V60D60C-M3/I"
+			(at 79.375 77.47 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "footprint:SON_0L30DJF-TR_STM"
-			(at 66.548 76.454 0)
+		(property "Footprint" "footprint:DPAK_60C-M3&slash_I_VIS"
+			(at 68.072 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4396,8 +4536,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 64.77 82.55 0)
+		(property "Datasheet" "https://www.vishay.com/doc?87554"
+			(at 68.326 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4407,7 +4547,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 82.55 0)
+			(at 54.61 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4415,25 +4555,19 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C501055"
-			(at 81.915 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "2c500158-50e7-4a7f-b539-fbcd1d11d287")
 		)
-		(pin "K"
-			(uuid "1ac8edbe-fae7-4325-9de0-26b71949234b")
+		(pin "3"
+			(uuid "f5421480-f0ad-40c9-a52a-7c8e8738f037")
 		)
-		(pin "A"
-			(uuid "f9f7bc7b-bfec-4538-9439-5541a2a8ad1e")
+		(pin "1"
+			(uuid "f89c4e8a-aea5-43bb-9f9e-65a1131c1cd3")
 		)
 		(instances
 			(project ""
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/4c324161-c4da-41f3-8af5-33f4b9a0442d"
-					(reference "U2")
+					(reference "CR1")
 					(unit 1)
 				)
 			)

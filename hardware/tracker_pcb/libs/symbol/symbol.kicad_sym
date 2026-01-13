@@ -9192,7 +9192,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "CR"
+		(property "Reference" "D"
 			(at 25.4 12.7 0)
 			(effects
 				(font
@@ -9446,7 +9446,7 @@
 						)
 					)
 				)
-				(number "K"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
