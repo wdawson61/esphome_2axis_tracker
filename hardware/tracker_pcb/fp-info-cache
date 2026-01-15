@@ -1,4 +1,4 @@
-26824100199858440
+26829410055918705
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106399,6 +106399,27 @@ CONN2_2601-1102_WAG
 0
 4
 4
+footprint
+DPAK_60C-M3&slash_I_VIS
+
+V60D60C-M3/I 
+0
+3
+3
+footprint
+DPAK_60C-M3&slash_I_VIS-L
+
+V60D60C-M3/I 
+0
+3
+3
+footprint
+DPAK_60C-M3&slash_I_VIS-M
+
+V60D60C-M3/I 
+0
+3
+3
 footprint
 DRV8243HQRXYRQ1
 RXY0014A_2022
