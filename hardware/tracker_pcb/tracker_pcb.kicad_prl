@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 17,
+    "active_layer": 5,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -27,7 +27,7 @@
       "pads": false,
       "text": true,
       "tracks": true,
-      "vias": true,
+      "vias": false,
       "zones": true
     },
     "visible_items": [
@@ -41,7 +41,6 @@
       "footprint_values",
       "footprint_references",
       "tracks",
-      "drc_errors",
       "bitmaps",
       "pads",
       "zones",
@@ -50,8 +49,8 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff7_fffdffff",
-    "zone_display_mode": 1
+    "visible_layers": "ffffffff_ffffffff_fffffff7_ffffffff",
+    "zone_display_mode": 0
   },
   "git": {
     "repo_type": "",
