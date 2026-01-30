@@ -11274,7 +11274,7 @@
 		(descr "DRL0008A")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC3"
-			(at 2.8 -0.5 270)
+			(at -2.7 -0.8 270)
 			(layer "F.SilkS")
 			(uuid "a793ca6d-61d6-4179-b889-500e0e835fc1")
 			(effects
@@ -36926,7 +36926,7 @@
 		)
 	)
 	(gr_text "G"
-		(at 172.6 74.8 0)
+		(at 172.6 75.9 0)
 		(layer "F.SilkS")
 		(uuid "0b800559-b315-4061-8e1e-2b8b5ade1a4b")
 		(effects
@@ -37050,7 +37050,7 @@
 		)
 	)
 	(gr_text "B"
-		(at 176.3 74.7 0)
+		(at 176.3 75.8 0)
 		(layer "F.SilkS")
 		(uuid "2e8a2ab4-f621-4f2b-befb-7db86a2c990b")
 		(effects
@@ -37803,7 +37803,7 @@
 		)
 	)
 	(gr_text "+V"
-		(at 182.8 74.6 0)
+		(at 182.8 75.7 0)
 		(layer "F.SilkS")
 		(uuid "bb68abcc-3d3c-4b80-b15c-7b7c9ccfe8f9")
 		(effects
@@ -38016,7 +38016,7 @@
 		)
 	)
 	(gr_text "A"
-		(at 179.7 74.6 0)
+		(at 179.7 75.7 0)
 		(layer "F.SilkS")
 		(uuid "d3481c64-4c31-4355-ae89-637bd18016e0")
 		(effects
