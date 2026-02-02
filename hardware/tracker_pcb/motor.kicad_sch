@@ -410,7 +410,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
+			(property "Reference" "U"
 				(at 29.21 7.62 0)
 				(effects
 					(font
@@ -1423,7 +1423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32804def-fd51-48dc-ab1e-c97f01737131")
-		(property "Reference" "C11"
+		(property "Reference" "C14"
 			(at 177.8 44.8309 0)
 			(effects
 				(font
@@ -1486,11 +1486,11 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "C11")
+					(reference "C14")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "C15")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1506,7 +1506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "511413fc-67c4-48c1-9e99-52fd86199b6d")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 213.36 82.55 0)
 			(effects
 				(font
@@ -1557,11 +1557,11 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -1576,7 +1576,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55b1eba6-eeae-4ef9-8112-63f5fce307bc")
-		(property "Reference" "C13"
+		(property "Reference" "C16"
 			(at 254.254 45.72 0)
 			(effects
 				(font
@@ -1639,11 +1639,11 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "C13")
+					(reference "C16")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "C17")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -1659,7 +1659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7695aeda-b221-479d-be72-5b9f49117227")
-		(property "Reference" "IC1"
+		(property "Reference" "U6"
 			(at 215.5033 31.75 0)
 			(effects
 				(font
@@ -1816,11 +1816,11 @@
 		(instances
 			(project ""
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "IC1")
+					(reference "U6")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "IC2")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -1835,7 +1835,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84721cad-d5ca-41ff-853d-12c85eedab9a")
-		(property "Reference" "C12"
+		(property "Reference" "C15"
 			(at 240.284 45.974 0)
 			(effects
 				(font
@@ -1898,11 +1898,11 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "C12")
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "C16")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -1917,7 +1917,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95ae83f9-d8da-43a1-85e8-c70106ca09be")
-		(property "Reference" "C10"
+		(property "Reference" "C13"
 			(at 163.576 44.958 0)
 			(effects
 				(font
@@ -1980,11 +1980,11 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/7a9ac5e6-2be9-4d8c-8c5b-8ceb68264255"
-					(reference "C10")
+					(reference "C13")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/f8a23924-a799-4920-a190-8ed5e6a03d20"
-					(reference "C14")
+					(reference "C17")
 					(unit 1)
 				)
 			)
