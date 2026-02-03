@@ -1306,7 +1306,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02b57fc6-c7bd-4c21-9f49-bb4c26efed13")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 178.054 76.454 90)
 			(effects
 				(font
@@ -1371,7 +1371,7 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -1386,7 +1386,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b8dc5fc-6271-4627-8625-bbb62aa32640")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 156.464 76.454 0)
 			(effects
 				(font
@@ -1447,7 +1447,7 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -1529,7 +1529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42308b13-584b-4a25-bd9b-fb7d77115313")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 162.814 68.58 90)
 			(effects
 				(font
@@ -1590,7 +1590,7 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -1606,7 +1606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56dc08da-6ca8-4694-9cd3-ad40160d4ed3")
-		(property "Reference" "C21"
+		(property "Reference" "C20"
 			(at 124.46 88.8999 0)
 			(effects
 				(font
@@ -1669,7 +1669,7 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
-					(reference "C21")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -1703,7 +1703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOTFL50P160X60-8N"
+		(property "Footprint" "footprint:SOTFL50P160X60-8N"
 			(at 144.78 169.85 0)
 			(effects
 				(font
@@ -1833,7 +1833,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b595f441-ce03-4130-bbfb-c8330e9b927c")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 161.798 86.614 90)
 			(effects
 				(font
@@ -1894,7 +1894,7 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b3bc6330-02c7-43c9-a193-56a83bf675dc"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)
