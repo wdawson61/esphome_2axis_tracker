@@ -5,6 +5,156 @@
 	(uuid "f86433af-c2ae-4aa4-b452-b7b16e75752c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1077,10 +1227,22 @@
 		(uuid "55c4b220-20a7-46d3-9d7a-3542326c1fbe")
 	)
 	(junction
+		(at 114.3 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15e307ae-b209-4b22-8862-21003fa80ab8")
+	)
+	(junction
 		(at 179.07 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35854c9d-24f8-4e5d-9762-b590d5a662d2")
+	)
+	(junction
+		(at 114.3 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4658eaba-4849-47f2-823e-b25c170ff3b7")
 	)
 	(junction
 		(at 127 85.09)
@@ -1126,6 +1288,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 97.79) (xy 127 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a6a29c4-45b7-4d61-b398-96fb00fdd02b")
+	)
+	(wire
+		(pts
+			(xy 114.3 85.09) (xy 114.3 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "214faee4-223e-4b6f-a9af-a7db251b9100")
+	)
+	(wire
+		(pts
 			(xy 139.7 85.09) (xy 146.05 85.09)
 		)
 		(stroke
@@ -1156,7 +1338,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 97.79) (xy 127 97.79)
+			(xy 90.17 97.79) (xy 114.3 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1196,13 +1378,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 85.09) (xy 127 85.09)
+			(xy 110.49 85.09) (xy 114.3 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ca54c776-e8b0-4985-9553-0267c24ca91a")
+	)
+	(wire
+		(pts
+			(xy 114.3 95.25) (xy 114.3 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d828efcf-7afe-414b-bc43-c4ad63d95455")
 	)
 	(wire
 		(pts
@@ -1213,6 +1405,16 @@
 			(type default)
 		)
 		(uuid "dd1d36e3-d442-42f4-a878-3b9644a568cd")
+	)
+	(wire
+		(pts
+			(xy 114.3 85.09) (xy 127 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e20fcfcb-13e0-435a-8cb8-e4dc6df5dba7")
 	)
 	(wire
 		(pts
@@ -1296,8 +1498,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C72039"
-			(at 128.905 88.265 0)
+		(property "Value" "GRNLED"
+			(at 137.16 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1422,7 +1624,7 @@
 				)
 			)
 		)
-		(property "Value" "1.8k"
+		(property "Value" "1.2k"
 			(at 106.68 81.28 90)
 			(effects
 				(font
@@ -1430,7 +1632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
 			(at 106.934 84.074 90)
 			(effects
 				(font
@@ -1457,7 +1659,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C17398 "
 			(at 106.68 78.74 0)
 			(effects
 				(font
@@ -1488,6 +1690,88 @@
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 114.3 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ac50661-f7b0-43db-bb01-3c4a8ae1d097")
+		(property "Reference" "D9"
+			(at 116.84 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DFLZ107"
+			(at 116.84 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprint:DFLZ107"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "047383fb-93ff-43f8-bdf4-bbff222aff30")
+		)
+		(pin "2"
+			(uuid "ec8389d0-c74a-468d-ba87-66c200fbc813")
+		)
+		(instances
+			(project ""
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
+					(reference "D10")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
+					(reference "D12")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
+					(reference "D9")
+					(unit 1)
+				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -1779,8 +2063,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148W(SOD-123)"
-			(at 105.664 93.98 90)
+		(property "Value" "1N4148W"
+			(at 129.032 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
