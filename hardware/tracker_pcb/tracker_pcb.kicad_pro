@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.6,
-          "width": 1.325
+          "drill": 0.8,
+          "height": 1.35,
+          "width": 1.35
         },
         "silk_line_width": 0.1524,
         "silk_text_italic": false,
@@ -917,6 +917,18 @@
           "group_by": false,
           "label": "Fieldname 1",
           "name": "Fieldname 1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
           "show": false
         }
       ],
