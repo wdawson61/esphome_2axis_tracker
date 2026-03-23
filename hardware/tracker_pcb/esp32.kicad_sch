@@ -8742,7 +8742,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C202388"
+		(property "LCSC" "C493285"
 			(at 130.81 73.6599 0)
 			(effects
 				(font
@@ -8946,7 +8946,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+		(property "Value" "TYPE-C-31-M-12"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -8963,7 +8963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723676069908480"
 			(at 50.8 78.74 0)
 			(effects
 				(font
@@ -8981,7 +8981,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5184243"
+		(property "LCSC" "C165948"
 			(at 46.99 55.88 0)
 			(effects
 				(font
@@ -9267,7 +9267,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C202388"
+		(property "LCSC" "C493285"
 			(at 140.97 104.1399 0)
 			(effects
 				(font
