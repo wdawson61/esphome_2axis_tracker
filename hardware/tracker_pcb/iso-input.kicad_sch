@@ -1778,7 +1778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19e1de9f-34bf-4d04-b075-333aaef86f86")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 106.68 78.74 90)
 			(effects
 				(font
@@ -2001,19 +2001,19 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "R19")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "R13")
+					(reference "R15")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "R17")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2029,7 +2029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ac50661-f7b0-43db-bb01-3c4a8ae1d097")
-		(property "Reference" "D5"
+		(property "Reference" "D7"
 			(at 116.84 90.1699 90)
 			(effects
 				(font
@@ -2254,19 +2254,19 @@
 		(instances
 			(project ""
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "D7")
+					(reference "D9")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "D11")
+					(reference "D13")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "D5")
+					(reference "D7")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "D9")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -2282,7 +2282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abfa3a90-b0b8-43b4-beb1-5c92fb84b5be")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR019"
 			(at 173.99 104.14 0)
 			(effects
 				(font
@@ -2333,19 +2333,19 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "#PWR019")
+					(reference "#PWR020")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "#PWR018")
+					(reference "#PWR019")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "#PWR020")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -2361,7 +2361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2b0aea6-dc9a-4c8a-9030-354b3ef45ada")
-		(property "Reference" "R14"
+		(property "Reference" "R16"
 			(at 181.61 73.6599 0)
 			(effects
 				(font
@@ -2586,19 +2586,19 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "R16")
+					(reference "R18")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "R20")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "R14")
+					(reference "R16")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "R18")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -2873,7 +2873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3c97955-2e09-49e4-b4ef-13723b2213c6")
-		(property "Reference" "D6"
+		(property "Reference" "D8"
 			(at 125.73 86.36 90)
 			(effects
 				(font
@@ -3116,19 +3116,19 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "D8")
+					(reference "D10")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "D12")
+					(reference "D14")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
-					(reference "D6")
+					(reference "D8")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "D10")
+					(reference "D12")
 					(unit 1)
 				)
 			)
