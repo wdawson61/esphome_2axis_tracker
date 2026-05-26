@@ -1031,6 +1031,10 @@
     [
       "4b60d742-f193-431b-a1a9-b431b44dc8b4",
       "LORA"
+    ],
+    [
+      "880abc82-4625-46d5-a405-17a91e8e8a62",
+      "motor_safety"
     ]
   ],
   "text_variables": {}
