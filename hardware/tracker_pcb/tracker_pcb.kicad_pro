@@ -519,7 +519,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -929,6 +929,66 @@
           "group_by": false,
           "label": "Sim.Device",
           "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Peak Pulse Power Dissipation (Ppp)",
+          "name": "Peak Pulse Power Dissipation (Ppp)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Polarity",
+          "name": "Polarity",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Clamping Voltage",
+          "name": "Clamping Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Number of Channels",
+          "name": "Number of Channels",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Type",
+          "name": "Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage - Breakdown",
+          "name": "Voltage - Breakdown",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "level of protection",
+          "name": "level of protection",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Reverse Stand-Off Voltage (Vrwm)",
+          "name": "Reverse Stand-Off Voltage (Vrwm)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Operating Temperature",
+          "name": "Operating Temperature",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Peak Pulse Current (Ipp)",
+          "name": "Peak Pulse Current (Ipp)",
           "show": false
         }
       ],

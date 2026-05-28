@@ -2282,7 +2282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abfa3a90-b0b8-43b4-beb1-5c92fb84b5be")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 173.99 104.14 0)
 			(effects
 				(font
@@ -2333,19 +2333,19 @@
 		(instances
 			(project "tracker_pcb"
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/04328898-976a-48a2-86bf-9938cb4aefd5"
-					(reference "#PWR020")
+					(reference "#PWR017")
 					(unit 1)
 				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45a2292e-2f51-4a4c-a627-74180fb6fdfe"
-					(reference "#PWR022")
-					(unit 1)
-				)
-				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
 					(reference "#PWR019")
 					(unit 1)
 				)
+				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/45c78875-26ba-4b22-bc82-79a51b704824"
+					(reference "#PWR016")
+					(unit 1)
+				)
 				(path "/6aaa9514-f94e-4843-90d0-16960e4e49cb/b128d80c-4aa3-4c05-bd4f-543db8edd72e"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
