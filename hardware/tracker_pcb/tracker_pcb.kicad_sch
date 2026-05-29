@@ -5470,7 +5470,7 @@
 		)
 		(uuid "6703d5ba-2072-4e16-85f2-5d2781d68f30")
 	)
-	(label "SDO"
+	(label "SDI"
 		(at 256.54 130.81 180)
 		(effects
 			(font
@@ -5680,7 +5680,7 @@
 		)
 		(uuid "b799ba0d-1559-42ab-a1ef-409edb8ccdf9")
 	)
-	(label "SDI"
+	(label "SDO"
 		(at 259.08 90.17 180)
 		(effects
 			(font
@@ -13903,16 +13903,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "NRST" input
-			(at 34.29 34.29 180)
-			(uuid "fad0c13b-2ebf-418d-9528-a034f12415c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
